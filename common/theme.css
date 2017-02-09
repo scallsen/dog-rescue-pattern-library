@@ -1,15 +1,15 @@
 :root {
-  --color-primary: #2196F3;
-  --color-primary-light: #BBDEFB;
-  --color-primary-dark: #1976D2;
-  --color-accent: #CDDC39;
+  --color-primary: #2196f3;
+  --color-primary-light: #bbdefb;
+  --color-primary-dark: #1976d2;
+  --color-accent: #cddc39;
   --color-primary-text: #212121;
   --color-secondary-text: #757575;
-  --color-divider: #BDBDBD;
-  --color-white: #FFFFFF;
+  --color-divider: #bdbdbd;
+  --color-white: #fff;
 
-  --font-primary: 'Lato', sans-serif;
-  --font-secondary: 'Oswald', sans-serif;
+  --font-primary: "Lato", sans-serif;
+  --font-secondary: "Oswald", sans-serif;
 
 }
 
