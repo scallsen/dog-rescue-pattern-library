@@ -24,6 +24,7 @@
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#buttons">Buttons</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#cards">Cards</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#form">Form</a></li>
+                <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#navigation">Navigation</a></li>
           </ul>
         </nav>
       </div>
@@ -584,11 +585,18 @@
     &lt;/h3>&lt;/div>
   &lt;/div>
 
-  &lt;form class="section-1 max-length island" method="post" novalidate="">
+  &lt;form class="section-1 max-length island" method="post" novalidate="" id="section-1">
 
-    &lt;div class="push-1-2">
-      &lt;input type="checkbox" id="confirm-1" checkbox="" required aria-describedby="confirm-error">
-      &lt;label class="terms" for="confirm-1">&lt;span>&lt;/span>I understand that this application form is not a guarantee that the dog I have applied for will still be available if my application to adopt a dog is approved, as there could be several applications for this dog already in progress or the dog may have a requirement that my home does not provide.&lt;/label>
+    &lt;div class="relative push-1-2">
+      &lt;input type="checkbox" name="confirm-1" id="confirm-1" value="valuable" checkbox="" required aria-describedby="confirm-error">
+      &lt;div class="notchecked">
+        &lt;i class="absolute icon i-32">&lt;svg>&lt;use xlink:href="../../images/icons.svg#checkbox-0"/>&lt;/svg>&lt;/i>
+      &lt;/div>
+      &lt;div class="checked">
+        &lt;i class="absolute icon i-32">&lt;svg>&lt;use xlink:href="../../images/icons.svg#checkbox-0"/>&lt;/svg>&lt;/i>
+      &lt;/div>
+
+      &lt;label class="terms" for="confirm-1">I understand that this application form is not a guarantee that the dog I have applied for will still be available if my application to adopt a dog is approved, as there could be several applications for this dog already in progress or the dog may have a requirement that my home does not provide.&lt;/label>
 
       &lt;p class="error-message milli island-1-4 push-0" id="name-error">
         &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
@@ -656,7 +664,7 @@
       &lt;/p>
     &lt;/div>
 
-    &lt;div class="form-btn pad-t-1-2">
+    &lt;div class="section-1-btn form-btn pad-t-1-2">
       &lt;button class="btn micro" type="submit">NEXT STEP&lt;/button>
     &lt;/div>
 
@@ -761,7 +769,7 @@
     &lt;/div>
 
 
-    &lt;div class="form-btn pad-t-1-2">
+    &lt;div class="section-2-btn form-btn pad-t-1-2">
       &lt;button class="btn micro" type="submit">NEXT STEP&lt;/button>
     &lt;/div>
   &lt;/form>
@@ -872,7 +880,7 @@
       &lt;/div>
     &lt;/div>
 
-    &lt;div class="form-btn pad-t-1-2">
+    &lt;div class="section-3-btn form-btn pad-t-1-2">
       &lt;button class="btn micro" type="submit">NEXT STEP&lt;/button>
     &lt;/div>
 
@@ -998,6 +1006,142 @@
   &lt;/form>
 
 &lt;/div>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+
+</section>
+
+        <section class="pattern" id="navigation">
+  <div class="push">
+    <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-4">
+      <h2 class="pattern-name peta push-1-8">Navigation</h2>
+        <nav class="pattern-nav milli">
+          <ol class="list-group-inline pad-t-1-4 push-0">
+              <li><a class="btn btn-ghost btn-rounded gutter push-1-4 pad-t-1-8 pad-b-1-8" href="#navigation-page-nav">Page nav</a></li>
+              <li><a class="btn btn-ghost btn-rounded gutter push-1-4 pad-t-1-8 pad-b-1-8" href="#navigation-top-nav">Top nav</a></li>
+          </ol>
+        </nav>
+    </div>
+
+  </div>
+
+  
+
+    <div class="pattern-details push" id="navigation-page-nav">
+        <div class="push">
+          <div class="pattern-toolbar pattern-toolbar-inner gutter pad-t-1-4 pad-b-1-4">
+            <h3 class="pattern-name tera push-1-8">Page nav</h3>
+          </div>
+        </div>
+
+      <div class="pattern-examples">
+        <div class="gutter">
+          <iframe class="push" src="patterns/navigation/page-nav.html" onload="resizeIframe(this)"></iframe>
+        </div>
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;div class="page-nav-card"&gt;
+  &lt;nav>
+    &lt;ul>
+      &lt;li>
+        &lt;a href="#">
+          &lt;i class="icon i-32">&lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow-back"/>&lt;/svg>&lt;/i>
+        &lt;/a>
+      &lt;/li>
+      &lt;span>PAGE 1 OF 3&lt;/span>
+      &lt;li>
+        &lt;a href="#">
+          &lt;i class="icon i-32">&lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow-forwards"/>&lt;/svg>&lt;/i>
+        &lt;/a>
+      &lt;/li>
+    &lt;/ul>
+  &lt;/nav>
+&lt;/div>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="pattern-details push" id="navigation-top-nav">
+        <div class="push">
+          <div class="pattern-toolbar pattern-toolbar-inner gutter pad-t-1-4 pad-b-1-4">
+            <h3 class="pattern-name tera push-1-8">Top nav</h3>
+          </div>
+        </div>
+
+      <div class="pattern-examples">
+        <div class="gutter">
+          <iframe class="push" src="patterns/navigation/top-nav.html" onload="resizeIframe(this)"></iframe>
+        </div>
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;header&gt;
+  &lt;div class="top-bar push-0">
+
+  &lt;/div>
+  &lt;div class="bot-bar">
+    &lt;nav class="max-length">
+      &lt;ul class="list-group list-group-inline">
+        &lt;li>
+          &lt;a class="nav-link" id="nav-link" href="#">
+            &lt;div class="pad-t-1-2 nav-btn current-page">
+              &lt;div class="block">
+                &lt;i id="nav-link-item" class="nav-btn-icon icon i-32">&lt;svg>&lt;use xlink:href="../../images/icons.svg#icon-home"/>&lt;/svg>&lt;/i>
+              &lt;/div>
+              &lt;div class="push-1-2 block">
+                &lt;span class="micro nav-btn-text" id="nav-link-item">HOME&lt;/span>
+              &lt;/div>
+            &lt;/div>
+          &lt;/a>
+        &lt;/li>
+
+        &lt;li>
+          &lt;a class="nav-link" id="nav-link2" href="#">
+            &lt;div class="pad-t-1-2 nav-btn">
+              &lt;div class="block">
+                &lt;i id="nav-link-item2" class="nav-btn-icon icon i-32">&lt;svg>&lt;use xlink:href="../../images/icons.svg#icon-donate"/>&lt;/svg>&lt;/i>
+              &lt;/div>
+              &lt;div class="push-1-2 block">
+                &lt;span class="micro nav-btn-text" id="nav-link-item2">DONATE&lt;/span>
+              &lt;/div>
+            &lt;/div>
+          &lt;/a>
+        &lt;/li>
+
+        &lt;li>
+          &lt;a class="nav-link" id="nav-link3" href="#">
+            &lt;div class="pad-t-1-2 nav-btn">
+              &lt;div class="block">
+                &lt;i id="nav-link-item3" class="nav-btn-icon icon i-32">&lt;svg>&lt;use xlink:href="../../images/icons.svg#icon-adopt"/>&lt;/svg>&lt;/i>
+              &lt;/div>
+              &lt;div class="push-1-2 block">
+                &lt;span class="micro nav-btn-text" id="nav-link-item3">ADOPT&lt;/span>
+              &lt;/div>
+            &lt;/div>
+          &lt;/a>
+        &lt;/li>
+
+        &lt;li>
+          &lt;a class="nav-link" id="nav-link4" href="#">
+            &lt;div class="pad-t-1-2 nav-btn">
+              &lt;div class="block">
+                &lt;i id="nav-link-item4" class="nav-btn-icon icon i-32">&lt;svg>&lt;use xlink:href="../../images/icons.svg#icon-user"/>&lt;/svg>&lt;/i>
+              &lt;/div>
+              &lt;div class="push-1-2 block">
+                &lt;span class="micro nav-btn-text" id="nav-link-item4">LOGIN&lt;/span>
+              &lt;/div>
+            &lt;/div>
+          &lt;/a>
+        &lt;/li>
+
+      &lt;/ul>
+    &lt;/nav>
+  &lt;/div>
+
+&lt;/header>
 </pre></code>
             </div>
           </div>

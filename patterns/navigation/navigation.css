@@ -1,0 +1,49 @@
+.top-bar {
+  background-color: var(--color-primary-dark);
+  height: 8em;
+}
+
+.bot-bar {
+  background-color: var(--color-primary);
+  box-shadow: 0px 2px 1px #888888;
+}
+
+.nav-btn {
+  text-align: center;
+  width: 6em;
+}
+
+.nav-btn-text, .nav-btn-icon {
+  color: white;
+}
+
+.current-page {
+  border-bottom: 3px solid var(--color-accent);
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+#nav-link:hover #nav-link-item,
+#nav-link2:hover #nav-link-item2,
+#nav-link3:hover #nav-link-item3,
+#nav-link4:hover #nav-link-item4 {
+  color: var(--color-accent);
+}
+
+.page-nav-card {
+  background-color: #f1f1f1;
+  width: 15em;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0px 2px 1px #888888;
+}
+
+.page-nav-icon {
+  color: var(--color-primary-text);
+}
+
+.page-nav-icon:hover {
+  color: var(--color-accent);
+}
