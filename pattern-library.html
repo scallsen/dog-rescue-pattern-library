@@ -20,8 +20,10 @@
               <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#typography">Typography</a></li>
               <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#grid">Grid</a></li>
               <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#modules">Modules</a></li>
+              <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#icons">Icons</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#buttons">Buttons</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#cards">Cards</a></li>
+                <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#form">Form</a></li>
           </ul>
         </nav>
       </div>
@@ -371,6 +373,39 @@
 
 </section>
 
+        <section class="pattern" id="icons">
+  <div class="push">
+    <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-4">
+      <h2 class="pattern-name peta push-1-8">Icons</h2>
+    </div>
+
+      <div class="pattern-desc milli island">
+        <div class="max-length"><p>The sprite sheet contains the following icons that are available for use in the website. Combine the icons with <a href="https://modulifier.web-dev.tools">Modulifier</a> classes for lots of variability.</p>
+</div>
+      </div>
+  </div>
+
+  
+
+    <div class="pattern-details push" id="icons-icons">
+
+      <div class="pattern-examples">
+        <div class="gutter">
+          <iframe class="push" src="patterns/icons/1-icons.html" onload="resizeIframe(this)"></iframe>
+        </div>
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;i class="icon i-192"&gt;
+  &lt;svg>&lt;use xlink:href="images/icons.svg#ID-FROM-LIST"/>&lt;/svg>
+&lt;/i>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+
+</section>
+
         <section class="pattern" id="buttons">
   <div class="push">
     <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-4">
@@ -397,10 +432,10 @@
         </div>
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
-              <code><pre>&lt;a class="btn btn-special" href="#"&gt;Special Button&lt;/a>
-&lt;a class="btn" href="#">Standard Button&lt;/a>
-&lt;a class="btn btn-light" href="#">Light Button&lt;/a>
-&lt;a class="btn btn-ghost" href="#">Ghost Button&lt;/a>
+              <code><pre>&lt;a class="btn btn-special micro" href="#"&gt;SPECIAL BUTTON&lt;/a>
+&lt;a class="btn micro" href="#">BUTTON&lt;/a>
+&lt;a class="btn btn-light micro" href="#">LIGHT BUTTON&lt;/a>
+&lt;a class="btn btn-ghost micro" href="#">GHOST BUTTON&lt;/a>
 </pre></code>
             </div>
           </div>
@@ -417,7 +452,6 @@
           <ol class="list-group-inline pad-t-1-4 push-0">
               <li><a class="btn btn-ghost btn-rounded gutter push-1-4 pad-t-1-8 pad-b-1-8" href="#cards-adoption-card">Adoption card</a></li>
               <li><a class="btn btn-ghost btn-rounded gutter push-1-4 pad-t-1-8 pad-b-1-8" href="#cards-basic-card">Basic card</a></li>
-              <li><a class="btn btn-ghost btn-rounded gutter push-1-4 pad-t-1-8 pad-b-1-8" href="#cards-icon-card">Icon card</a></li>
               <li><a class="btn btn-ghost btn-rounded gutter push-1-4 pad-t-1-8 pad-b-1-8" href="#cards-link-card">Link card</a></li>
           </ol>
         </nav>
@@ -440,28 +474,24 @@
         </div>
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
-              <code><pre>&lt;div class="relative adopt-card card island-1-2"&gt;
-  &lt;div class="relative img-container push">
-    &lt;a href="#">
-      &lt;img class="img-flex" src="http://placehold.it/350x200" alt="">
-      &lt;div class="absolute island left-info">
-        &lt;h2 class="push-1-4 yotta">DOG NAME&lt;/h2>
-        &lt;h3 class="push-1-4">Breed Name&lt;/h3>
+              <code><pre>&lt;div class="adopt-card card push-1-2"&gt;
+  &lt;div class="relative img-container">
+    &lt;div>
+      &lt;img class="img-flex" src="http://placehold.it/300x300" alt="">
+      &lt;div class="absolute island-1-2 left-info">
+        &lt;h2 class="push-1-4 yotta">Hogan&lt;/h2>
       &lt;/div>
-    &lt;/a>
+    &lt;/div>
   &lt;/div>
-  &lt;div class="grid gutter">
-    &lt;div class="unit xs-1-2">
-      &lt;ul class="right-info pad-b list-group">
-        &lt;li>AGE: XX years&lt;/li>
-        &lt;li>SEX: Un/Neutered&lt;/li>
-        &lt;li>COLOUR: Name&lt;/li>
-        &lt;li>ID: XXXXXX&lt;/li>
-      &lt;/ul>
-    &lt;/div>
-    &lt;div class="unit xs-1-2 adopt-button">
-      &lt;a class="btn" href="#">Standard Button&lt;/a>
-    &lt;/div>
+  &lt;div class="gutter-1-2">
+    &lt;ul class="secondary-text pad-t-1-2 list-group push-1-2">
+      &lt;li class="micro">GOLDEN RETRIEVER&lt;/li>
+      &lt;li class="micro">6 YEARS&lt;/li>
+    &lt;/ul>
+    &lt;p class="milli push-0">I am a happy pup that will love to join any home with children!&lt;/p>
+  &lt;/div>
+  &lt;div class="island-1-4">
+    &lt;a class="card-btn btn btn-ghost micro pad-t-1-2" href="#">LEARN MORE&lt;/a>
   &lt;/div>
 &lt;/div>
 </pre></code>
@@ -491,32 +521,6 @@
           </div>
       </div>
     </div>
-    <div class="pattern-details push" id="cards-icon-card">
-        <div class="push">
-          <div class="pattern-toolbar pattern-toolbar-inner gutter pad-t-1-4 pad-b-1-4">
-            <h3 class="pattern-name tera push-1-8">Icon card</h3>
-          </div>
-        </div>
-
-      <div class="pattern-examples">
-        <div class="gutter">
-          <iframe class="push" src="patterns/cards/icon-card.html" onload="resizeIframe(this)"></iframe>
-        </div>
-          <div class="gutter">
-            <div class="pattern-code milli island-1-2">
-              <code><pre>&lt;div class="card island-1-2 text-center"&gt;
-  &lt;i class="icon i-128 push-1-2">
-      &lt;svg>&lt;use xlink:href="../../images/icons.svg#velociraptor"/>&lt;/svg>
-    &lt;/i>
-  &lt;h2 class="push-1-4">This is a card&lt;/h2>
-  &lt;p class="push-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p>
-
-&lt;/div>
-</pre></code>
-            </div>
-          </div>
-      </div>
-    </div>
     <div class="pattern-details push" id="cards-link-card">
         <div class="push">
           <div class="pattern-toolbar pattern-toolbar-inner gutter pad-t-1-4 pad-b-1-4">
@@ -536,6 +540,464 @@
     &lt;p class="push-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p>
   &lt;/div>
 &lt;/a>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+
+</section>
+
+        <section class="pattern" id="form">
+  <div class="push">
+    <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-4">
+      <h2 class="pattern-name peta push-1-8">Form</h2>
+    </div>
+
+  </div>
+
+  
+
+    <div class="pattern-details push" id="form-text-input">
+
+      <div class="pattern-examples">
+        <div class="gutter">
+          <iframe class="push" src="patterns/form/text-input.html" onload="resizeIframe(this)"></iframe>
+        </div>
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;div class="max-length form-container"&gt;
+
+  &lt;div class="max-length form-topper">
+    &lt;div class="island inline-block">
+      &lt;div class="image-cropper">
+        &lt;img class="img-flex" src="http://placehold.it/300x300" alt="">
+      &lt;/div>
+    &lt;/div>
+    &lt;div class="inline-block">
+      &lt;h3 class="white push-0">Dogname
+      &lt;ul class="white list-group pad-t-0">
+        &lt;li class="micro form-info-top">BREED NAME&lt;/li>
+        &lt;li class="micro form-info-top"># YEARS&lt;/li>
+        &lt;li class="micro form-info-top">ID: 52313&lt;/li>
+      &lt;/ul>
+    &lt;/h3>&lt;/div>
+  &lt;/div>
+
+  &lt;form class="section-1 max-length island" method="post" novalidate="">
+
+    &lt;div class="push-1-2">
+      &lt;input type="checkbox" id="confirm-1" checkbox="" required aria-describedby="confirm-error">
+      &lt;label class="terms" for="confirm-1">&lt;span>&lt;/span>I understand that this application form is not a guarantee that the dog I have applied for will still be available if my application to adopt a dog is approved, as there could be several applications for this dog already in progress or the dog may have a requirement that my home does not provide.&lt;/label>
+
+      &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label">You must agree to all conditions.&lt;/span>
+      &lt;/p>
+    &lt;/div>
+
+    &lt;div class="push-1-2">
+      &lt;input type="checkbox" id="confirm-2" checkbox="" required aria-describedby="confirm-error">
+      &lt;label class="terms" for="confirm-2">I understand that LOYAL Rescue Inc. does not approve their dogs to applicants on a &quot;first come first serve&quot; basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.&lt;/label>
+
+      &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label">You must agree to all conditions.&lt;/span>
+      &lt;/p>
+    &lt;/div>
+
+    &lt;div class="push-1-2">
+      &lt;input type="checkbox" id="confirm-3" checkbox="" required aria-describedby="confirm-error">
+      &lt;label class="terms" for="confirm-3">In the event that the dog I have applied for is approved to another adopter before my application is processed I will select another dog from the LOYAL Rescue Inc. website and continue with my application screening.&lt;/label>
+
+      &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label">You must agree to all conditions.&lt;/span>
+      &lt;/p>
+    &lt;/div>
+
+    &lt;div class="push-1-2">
+      &lt;input type="checkbox" id="confirm-4" checkbox="" required aria-describedby="confirm-error">
+      &lt;label class="terms" for="confirm-4">I understand and accept that virtually all &quot;rescued&quot; dogs will have behavioral issues of varying degrees. Many of these dogs have been abused or neglected and have a tendency to be more timid and/or defensive than a dog raised from birth by a knowledgeable and responsible dog owner. I understand and accept that while all known behavioral issues will be disclosed prior to the adoption being completed, it is entirely possible that minor or major behavioral issues may arise after the adoption has occurred and the dog is in my home. I am not expecting a pre-trained dog and am willing to work with this dog to help it overcome any issues it may have, or develops while under my care.&lt;/label>
+
+      &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label">You must agree to all conditions.&lt;/span>
+      &lt;/p>
+    &lt;/div>
+
+    &lt;div class="push-1-2">
+      &lt;input type="checkbox" id="confirm-5" checkbox="" required aria-describedby="confirm-error">
+      &lt;label class="terms" for="confirm-5">I understand and accept that although all LOYAL Rescue Inc. dogs have been evaluated by a veterinarian, and that a copy of the veterinarian&apos;s report(s) will be provided at the time of adoption, it is possible that the dog may have minor or major medical issues that are undiagnosed. I understand and accept that the approximate age of the dog is estimated by a veterinarian and may be slightly or significantly inaccurate.&lt;/label>
+
+      &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label">You must agree to all conditions.&lt;/span>
+      &lt;/p>
+    &lt;/div>
+
+    &lt;div class="push-1-2">
+      &lt;input type="checkbox" id="confirm-6" checkbox="" required aria-describedby="confirm-error">
+      &lt;label class="terms" for="confirm-6">I have verfied that this dog is being fostered in a location close enough for me to personally travel to, in order to adopt this dog, should I be the approved adopter.&lt;/label>
+
+      &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label">You must agree to all conditions.&lt;/span>
+      &lt;/p>
+    &lt;/div>
+
+    &lt;div class="push-1-2">
+      &lt;input type="checkbox" id="confirm-7" checkbox="" required aria-describedby="confirm-error">
+      &lt;label class="terms" for="confirm-7">I have thoroughly read and understand the information in the FAQ section of the LOYAL Rescue Inc. website available here.&lt;/label>
+
+      &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label">You must agree to all conditions.&lt;/span>
+      &lt;/p>
+    &lt;/div>
+
+    &lt;div class="form-btn pad-t-1-2">
+      &lt;button class="btn micro" type="submit">NEXT STEP&lt;/button>
+    &lt;/div>
+
+  &lt;/form>
+
+
+
+  &lt;form class="section-2 max-length island" method="post" novalidate="">
+    &lt;h2>Contact Information&lt;/h2>
+
+    &lt;div class="grid push-1-2">
+      &lt;div class="unit xs-1-2">
+        &lt;label class="milli" for="first-name">Name&lt;/label>
+        &lt;input id="first-name" required aria-describedby="name-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Your first name is required.&lt;/span>
+        &lt;/p>
+      &lt;/div>
+      &lt;div class="unit xs-1-2">
+        &lt;label class="milli" for="last-name">_ &lt;/label>
+        &lt;input id="last-name" required aria-describedby="name-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Your last name is required.&lt;/span>
+        &lt;/p>
+      &lt;/div>
+    &lt;/div>
+
+    &lt;div class="push-1-2">
+      &lt;div>
+        &lt;label class="milli" for="name">Address&lt;/label>
+        &lt;input id="name" required aria-describedby="name-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Your current address is required.&lt;/span>
+        &lt;/p>
+      &lt;/div>
+    &lt;/div>
+
+    &lt;div class="grid push-1-2">
+      &lt;div class="unit xs-1-2">
+        &lt;label class="milli" for="city">City&lt;/label>
+        &lt;input id="city" required aria-describedby="name-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Your City is required.&lt;/span>
+        &lt;/p>
+      &lt;/div>
+      &lt;div class="unit xs-1-2">
+        &lt;label class="milli" for="provstat">Province/State&lt;/label>
+        &lt;input id="provstat" required aria-describedby="name-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Your Province/State is required.&lt;/span>
+        &lt;/p>
+      &lt;/div>
+    &lt;/div>
+
+    &lt;div class="grid push-1-2">
+      &lt;div class="unit xs-1-2">
+        &lt;label class="milli" for="city">Postal Code/ZIP&lt;/label>
+        &lt;input id="city" required aria-describedby="name-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Enter your Postal Code/ZIP&lt;/span>
+        &lt;/p>
+      &lt;/div>
+      &lt;div class="unit xs-1-2">
+        &lt;label class="milli" for="provstat">Country&lt;/label>
+        &lt;select id="provstat" required aria-describedby="name-error">
+          &lt;option>Canada&lt;/option>
+          &lt;option>United States&lt;/option>
+        &lt;/select>
+        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Country is required.&lt;/span>
+        &lt;/p>
+      &lt;/div>
+    &lt;/div>
+
+    &lt;div class="push-1-2">
+      &lt;div>
+        &lt;label class="milli" for="email">Email Address&lt;/label>
+        &lt;input id="email" required aria-describedby="email-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="email-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">We need your email address to contact you!&lt;/span>
+        &lt;/p>
+      &lt;/div>
+    &lt;/div>
+
+    &lt;div class="push-1-2">
+      &lt;div>
+        &lt;label class="milli" for="name">Phone Number&lt;/label>
+        &lt;input id="name" required aria-describedby="name-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">We need your phone number to contact you!&lt;/span>
+        &lt;/p>
+      &lt;/div>
+    &lt;/div>
+
+
+    &lt;div class="form-btn pad-t-1-2">
+      &lt;button class="btn micro" type="submit">NEXT STEP&lt;/button>
+    &lt;/div>
+  &lt;/form>
+
+
+
+  &lt;form class="section-3 max-length island" method="post" novalidate="">
+    &lt;h2>Employment&lt;/h2>
+
+    &lt;div class="push-1-2">
+      &lt;div>
+        &lt;label class="milli" for="name">Employer&apos;s Name&lt;/label>
+        &lt;input id="name" required aria-describedby="name-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">You must be employed, please enter your Employer&apos;s name.&lt;/span>
+        &lt;/p>
+      &lt;/div>
+    &lt;/div>
+
+    &lt;div class="push-1-2">
+      &lt;div>
+        &lt;label class="milli" for="name">Job Title&lt;/label>
+        &lt;input id="name" required aria-describedby="name-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Please enter your job title.&lt;/span>
+        &lt;/p>
+      &lt;/div>
+    &lt;/div>
+
+    &lt;div class="push-1-2">
+      &lt;div>
+        &lt;label class="milli" for="name">Employer&apos;s Phone Number&lt;/label>
+        &lt;input id="name" required aria-describedby="name-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Your employer&apos;s phone number is required for verification.&lt;/span>
+        &lt;/p>
+      &lt;/div>
+    &lt;/div>
+
+    &lt;div class="grid push-1-2">
+      &lt;div class="unit xs-1-2">
+        &lt;label class="milli" for="employ-month employ-day employ-year">Month&lt;/label>
+        &lt;select id="employ-month" required aria-describedby="name-error">
+          &lt;option>--&lt;/option>
+          &lt;option>January&lt;/option>
+          &lt;option>February&lt;/option>
+          &lt;option>March&lt;/option>
+          &lt;option>April&lt;/option>
+          &lt;option>May&lt;/option>
+          &lt;option>June&lt;/option>
+          &lt;option>July&lt;/option>
+          &lt;option>August&lt;/option>
+          &lt;option>September&lt;/option>
+          &lt;option>October&lt;/option>
+          &lt;option>November&lt;/option>
+          &lt;option>December&lt;/option>
+        &lt;/select>
+      &lt;/div>
+      &lt;div class="unit xs-1-4 halfgridpad-r">
+        &lt;label class="milli" for="employ-day">Day&lt;/label>
+        &lt;select id="employ-month" required aria-describedby="name-error">
+          &lt;option>--&lt;/option>
+          &lt;option>1&lt;/option>
+          &lt;option>2&lt;/option>
+          &lt;option>3&lt;/option>
+          &lt;option>4&lt;/option>
+          &lt;option>5&lt;/option>
+          &lt;option>6&lt;/option>
+          &lt;option>7&lt;/option>
+          &lt;option>8&lt;/option>
+          &lt;option>9&lt;/option>
+          &lt;option>0&lt;/option>
+          &lt;option>11&lt;/option>
+          &lt;option>12&lt;/option>
+          &lt;option>13&lt;/option>
+          &lt;option>14&lt;/option>
+          &lt;option>15&lt;/option>
+          &lt;option>16&lt;/option>
+          &lt;option>17&lt;/option>
+          &lt;option>18&lt;/option>
+          &lt;option>19&lt;/option>
+          &lt;option>20&lt;/option>
+          &lt;option>21&lt;/option>
+          &lt;option>22&lt;/option>
+          &lt;option>23&lt;/option>
+          &lt;option>24&lt;/option>
+          &lt;option>25&lt;/option>
+          &lt;option>26&lt;/option>
+          &lt;option>27&lt;/option>
+          &lt;option>28&lt;/option>
+          &lt;option>29&lt;/option>
+          &lt;option>30&lt;/option>
+          &lt;option>31&lt;/option>
+        &lt;/select>
+      &lt;/div>
+      &lt;div class="unit xs-1-4 halfgridpad-l">
+        &lt;label class="milli" for="provstat">Year&lt;/label>
+        &lt;input id="provstat" required aria-describedby="employment-error">
+      &lt;/div>
+      &lt;div class="unit xs-1 grouped-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="employment-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">There is a problem!&lt;/span>
+        &lt;/p>
+      &lt;/div>
+    &lt;/div>
+
+    &lt;div class="form-btn pad-t-1-2">
+      &lt;button class="btn micro" type="submit">NEXT STEP&lt;/button>
+    &lt;/div>
+
+  &lt;/form>
+
+
+
+  &lt;form class="section-4 max-length island" method="post" novalidate="">
+    &lt;h2>Home Environment&lt;/h2>
+
+    &lt;div class="grid push-1-2">
+      &lt;div class="unit xs-1-2">
+        &lt;label class="milli" for="city">Home Style&lt;/label>
+        &lt;select id="employ-month" required aria-describedby="name-error">
+          &lt;option>--&lt;/option>
+          &lt;option>House&lt;/option>
+          &lt;option>Townhouse&lt;/option>
+          &lt;option>Apartment&lt;/option>
+          &lt;option>Mobile Home&lt;/option>
+        &lt;/select>
+        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Your City is required.&lt;/span>
+        &lt;/p>
+      &lt;/div>
+      &lt;div class="unit xs-1-2">
+        &lt;label class="milli" for="provstat">Ownership&lt;/label>
+        &lt;select id="employ-month" required aria-describedby="name-error">
+          &lt;option>--&lt;/option>
+          &lt;option>Own&lt;/option>
+          &lt;option>Rent&lt;/option>
+          &lt;option>Rent to own&lt;/option>
+          &lt;option>Live with relatives&lt;/option>
+          &lt;option>Other&lt;/option>
+        &lt;/select>
+        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Your Province/State is required.&lt;/span>
+        &lt;/p>
+      &lt;/div>
+    &lt;/div>
+
+    &lt;div class="grid push-1-2">
+      &lt;div class="unit xs-1-2">
+        &lt;label class="milli" for="city">Move in month&lt;/label>
+        &lt;select id="employ-month" required aria-describedby="name-error">
+          &lt;option>--&lt;/option>
+          &lt;option>January&lt;/option>
+          &lt;option>February&lt;/option>
+          &lt;option>March&lt;/option>
+          &lt;option>April&lt;/option>
+          &lt;option>May&lt;/option>
+          &lt;option>June&lt;/option>
+          &lt;option>July&lt;/option>
+          &lt;option>August&lt;/option>
+          &lt;option>September&lt;/option>
+          &lt;option>October&lt;/option>
+          &lt;option>November&lt;/option>
+          &lt;option>December&lt;/option>
+        &lt;/select>
+        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Your City is required.&lt;/span>
+        &lt;/p>
+      &lt;/div>
+      &lt;div class="unit xs-1-2">
+        &lt;label class="milli" for="provstat">Move in year&lt;/label>
+        &lt;input id="provstat" required aria-describedby="employment-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Your Province/State is required.&lt;/span>
+        &lt;/p>
+      &lt;/div>
+    &lt;/div>
+
+    &lt;div class="push-1-2">
+      &lt;div>
+        &lt;label class="milli" for="name">Landlord Name&lt;/label>
+        &lt;input id="name" required aria-describedby="name-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Please enter your landlord&apos;s name, your own name if owned by yourself.&lt;/span>
+        &lt;/p>
+      &lt;/div>
+    &lt;/div>
+
+    &lt;div class="push-1-2">
+      &lt;div>
+        &lt;label class="milli" for="name">Landlord Phone Number&lt;/label>
+        &lt;input id="name" required aria-describedby="name-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Please enter your landlord&apos;s contact number.&lt;/span>
+        &lt;/p>
+      &lt;/div>
+    &lt;/div>
+
+    &lt;div class="grid push-1-2">
+      &lt;div class="unit xs-1-2">
+        &lt;label class="milli" for="city">Environment Type&lt;/label>
+        &lt;select id="employ-month" required aria-describedby="name-error">
+          &lt;option>--&lt;/option>
+          &lt;option>City&lt;/option>
+          &lt;option>Suburban&lt;/option>
+          &lt;option>County&lt;/option>
+        &lt;/select>
+        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Your City sssssssssssis required.&lt;/span>
+        &lt;/p>
+      &lt;/div>
+      &lt;div class="unit xs-1-2">
+        &lt;label class="milli" for="provstat">Move in year&lt;/label>
+        &lt;input id="provstat" required aria-describedby="employment-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Your Province/State is required.&lt;/span>
+        &lt;/p>
+      &lt;/div>
+    &lt;/div>
+
+
+  &lt;/form>
+
+&lt;/div>
 </pre></code>
             </div>
           </div>

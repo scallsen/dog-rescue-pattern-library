@@ -2,7 +2,11 @@
   background-color: var(--color-primary);
   border-color: var(--color-primary);
 
+  box-shadow: 0 2px 2px #888888;
+
   color: #fff;
+
+  font-weight: 500;
 }
 
 .btn:hover {
@@ -16,40 +20,40 @@
   background-color: var(--color-accent);
   border-color: var(--color-accent);
 
-  color: var(--color-primary-dark);
+  color: var(--color-white);
 }
 
 .btn-special:hover {
-  background-color: var(--color-primary-dark);
-  border-color: var(--color-primary-dark);
+  background-color: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
 
-  color: var(--color-accent);
+  color: var(--color-white);
 }
 
 .btn-ghost {
-  background-color: var(--color-primary-light);
-  border-color: var(--color-primary-light);
-
-  color: #fff;
+  color: var(--color-primary);
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
 }
 
 .btn-ghost:hover {
-  background-color: var(--color-primary);
-  border-color: var(--color-primary);
+  background-color: #e8e8e8;
+  border-color: #e8e8e8;
 
-  color: #fff;
+  color: var(--color-primary);
 }
 
 .btn-light {
-  background-color: transparent;
-  border-color: var(--color-primary);
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
 
   color: var(--color-primary);
 }
 
 .btn-light:hover {
-  background-color: var(--color-primary);
-  border-color: var(--color-primary);
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
 
   color: #fff;
 }

@@ -1,0 +1,143 @@
+html {
+  font-family: sans-serif;
+}
+
+/* FORM TOPPER */
+
+.form-topper {
+  background-color: var(--color-primary);
+  padding: 0 0 0 0;
+}
+
+.image-cropper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50em;
+}
+
+.form-info-top {
+  line-height: 150%;
+}
+
+.form-container {
+  background-color: #f1f1f1;
+}
+/*****/
+
+.flag-optional {
+  color: #999;
+}
+
+.is-validated input:invalid,
+.is-validated input[type="checkbox"]:invalid + label::before {
+  border-color: #f33;
+}
+
+.error-message {
+  display: none;
+  background-color: #fee;
+  color: #c33;
+}
+
+.error-message-highlighted {
+  background-color: #c33;
+  color: #fff;
+}
+
+.is-validated > .error-message:first-child,
+.is-validated input:invalid + .error-message,
+.is-validated input:invalid + label + .error-message {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+input, select {
+  background-color: var(--color-white);
+  height: 2em;
+  border: 1px solid;
+  border-color: var(--color-divider);
+  /* 　cursor: pointer; custom svg button */
+  color: var(--color-secondary-text); /* custom svg button */
+  padding-left: 0.5em;
+  font-weight: lighter;
+}
+
+
+
+input[type="checkbox"] + input#confirm-1 {
+  display: none; /* custom svg button */
+}
+
+.checkbox-1 {
+  position: absolute;
+  height: 4em;
+  width: 4em;
+}
+
+label {
+  font-family: var(--font-primary);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.terms {
+  /*  position: relative;  */
+  padding-left: 3rem;
+  color: var(--color-secondary-text);
+  font-weight: normal;
+}
+
+form div div:first-child {
+  padding-right: 1em;
+}
+
+form div div:only-child {
+  padding-right: 0;
+}
+
+form div label {
+  color: var(--color-primary-text);
+  font-weight: 500;
+}
+
+.halfgridpad-r {
+  padding-right: 0.5em;
+}
+
+.halfgridpad-l {
+  padding-left: 0.5em;
+}
+
+.form-btn {
+  text-align: right;
+  right: 1;
+}
+
+
+/*section hiding */
+
+.section-2, .section-3, .section-4 {
+  display: none;
+}
+
+#form-control:checked ~ .section-1 {
+  display: none;
+}
