@@ -134,10 +134,6 @@ input:focus, select:focus, textarea:focus {
 
 /*section hiding */
 
-.section-2, .section-3, .section-4 {
-  display: none;
-}
-
-#form-control:checked ~ .section-1 {
+.hide {
   display: none;
 }
