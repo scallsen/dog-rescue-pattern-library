@@ -34,7 +34,7 @@
 
 .page-nav-card {
   background-color: #f1f1f1;
-  width: 15em;
+  width: 20em;
   text-align: center;
   border-radius: 3px;
   box-shadow: 0px 2px 1px #888888;
@@ -46,4 +46,11 @@
 
 .page-nav-icon:hover {
   color: var(--color-accent);
+}
+
+.footer-nav {
+  background-color: var(--color-primary-light);
+  padding: 2rem 0 2rem 0;
+  color: var(--color-primary);
+  text-align: center;
 }

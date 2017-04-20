@@ -49,20 +49,12 @@ html {
 }
 
 .is-validated > .error-message:first-child,
-.is-validated input:invalid + .error-message,
+.is-validated input:invalid + .error-message, .is-validated select:invalid + .error-message,
 .is-validated input:invalid + label + .error-message {
   display: block;
 }
 
-
-
-
-
-
-
-
-
-input, select {
+input:not([type="checkbox"]), select {
   background-color: var(--color-white);
   height: 2em;
   border: 1px solid;
@@ -74,15 +66,26 @@ input, select {
 }
 
 
-
-input[type="checkbox"] + input#confirm-1 {
-  display: none; /* custom svg button */
+[type="checkbox"] ~ .checked {
+  display: none;
+  cursor: pointer;
 }
 
+[type="checkbox"] ~ .notchecked {
+  cursor: pointer;
+  display: block;
+}
+
+[type="checkbox"]:checked ~ .checked {
+  display: block;
+}
+
+[type="checkbox"]:checked ~ .notchecked {
+  display: none;
+}
 
 label {
   font-family: var(--font-primary);
-  cursor: pointer;
 }
 
 
@@ -119,6 +122,14 @@ form div label {
   text-align: right;
   right: 1;
 }
+
+input:focus, select:focus, textarea:focus {
+  outline-color: var(--color-focus);
+  outline-style: solid;
+  outline-width: 1px;
+  outline-offset: -1px;
+}
+
 
 
 /*section hiding */

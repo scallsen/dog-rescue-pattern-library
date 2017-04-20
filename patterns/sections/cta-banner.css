@@ -1,0 +1,33 @@
+.cta-section {
+  background-color: var(--color-primary-light);
+  vertical-align: middle;
+}
+
+.section-img {
+
+}
+
+.top-section-img {
+  max-width: 15rem;
+}
+
+.bot-section-img {
+  display: none;
+}
+
+.cta-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .top-section-img {
+    display: none;
+  }
+
+  .bot-section-img {
+    display: block;
+  }
+
+}

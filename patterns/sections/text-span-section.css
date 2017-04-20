@@ -1,0 +1,10 @@
+.text-span-section {
+  background-color: var(--color-primary);
+  vertical-align: middle;
+}
+
+.text-span-section-text {
+  text-align: center;
+  color: var(--color-white);
+  font-weight: 500;
+}

@@ -1,0 +1,23 @@
+.search-bar {
+  margin: auto;
+  width: 75%;
+
+}
+
+.search-container {
+  background-color: var(--color-primary);
+  padding: 1rem 0 1rem 0;
+}
+
+.search-icon {
+  left: -20px;
+  top: 0;
+}
+
+.search-icon-color {
+  color: var(--color-primary-light);
+}
+
+.search-push:not([type="checkbox"]) {
+  padding-left: 2rem;
+}
