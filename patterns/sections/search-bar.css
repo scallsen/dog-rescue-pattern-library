@@ -1,10 +1,6 @@
-.search-bar {
-
-}
-
 .search-container {
   background-color: var(--color-primary);
-  padding: 1rem 0 1rem 0;
+  padding: 1rem 0;
 }
 
 .search-icon {

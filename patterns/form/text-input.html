@@ -14,106 +14,104 @@
 </head>
 <body>
 
-<div class="max-length form-container">
+  <div class="max-length form-container">
 
-  <div class="max-length form-topper">
-    <div class="island inline-block">
-      <div class="image-cropper">
-        <img class="img-flex" src="http://placehold.it/300x300" alt="">
+    <div class="max-length form-topper">
+      <div class="island inline-block">
+        <div class="image-cropper">
+          <img class="img-flex" src="http://placehold.it/300x300" alt="">
+        </div>
+      </div>
+      <div class="inline-block">
+        <h3 class="white push-0">Dogname</h3>
+        <ul class="white list-group pad-t-0">
+          <li class="micro form-info-top">BREED NAME</li>
+          <li class="micro form-info-top"># YEARS</li>
+          <li class="micro form-info-top">ID: 52313</li>
+        </ul>
       </div>
     </div>
-    <div class="inline-block">
-      <h3 class="white push-0">Dogname</h2>
-      <ul class="white list-group pad-t-0">
-        <li class="micro form-info-top">BREED NAME</li>
-        <li class="micro form-info-top"># YEARS</li>
-        <li class="micro form-info-top">ID: 52313</li>
-      </ul>
-    </div>
-  </div>
 
-<form class="section-1 max-length island" method="post" novalidate>
+    <form class="section-1 max-length island" method="post" novalidate>
 
-  <div class="relative push-1-2">
-    <input type="checkbox" name="confirm-1" id="confirm-1" value="valuable" checkbox required aria-describedby="confirm-error">
-    <label for="confirm-1" class="hide-custom-input notchecked" aria-hidden="true">
-      <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-0" /></svg></i>
-    </label>
+      <div class="relative push-1-2">
+        <input name="confirm-1" id="confirm-1" type="checkbox" required aria-describedby="confirm-error">
+        <label for="confirm-1" class="hide-custom-input notchecked" aria-hidden="true">
+          <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-0" /></svg></i>
+        </label>
 
-    <label for="confirm-1" class="hide-custom-input checked" aria-hidden="true">
-      <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-1" /></svg></i>
-    </label>
+        <label for="confirm-1" class="hide-custom-input checked" aria-hidden="true">
+          <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-1" /></svg></i>
+        </label>
 
-    <label class="terms" for="confirm-1">Click here to agree with the terms of this message. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</label>
+        <label class="terms" for="confirm-1">Click here to agree with the terms of this message. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</label>
 
-    <p class="error-message milli island-1-4 push-0" id="confirm-error">
-      <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
-      <span class="icon-label">You must agree with the checkbox selector!</span>
-    </p>
-  </div>
-
-  <div class="grid push-1-2">
-    <div class="unit xs-1-2">
-      <label class="milli" for="first-name">Text Field 1/2 A</label>
-      <input id="first-name" required aria-describedby="name-error">
-      <p class="error-message milli island-1-4 push-0" id="name-error">
-        <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
-        <span class="icon-label">Text Field 1/2 A is required!</span>
-      </p>
-    </div>
-    <div class="unit xs-1-2">
-      <label class="milli" for="last-name">Text Field 1/2 B</label>
-      <input id="last-name" required aria-describedby="name-error">
-      <p class="error-message milli island-1-4 push-0" id="name-error">
-        <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
-        <span class="icon-label">Text Field 1/2 B is required!</span>
-      </p>
-    </div>
-  </div>
-
-    <div class="push-1-2">
-      <div class="">
-        <label class="milli" for="name">Text field</label>
-        <input id="name" required aria-describedby="name-error">
-        <p class="error-message milli island-1-4 push-0" id="name-error">
+        <p class="error-message milli island-1-4 push-0" id="confirm-error">
           <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
-          <span class="icon-label">Text field is required!</span>
+          <span class="icon-label">You must agree with the checkbox selector!</span>
         </p>
       </div>
-    </div>
 
-
-
-    <div class="grid push-1-2">
-      <div class="unit xs-1-2">
-        <label class="milli" for="city">Text Field 1/2 C</label>
-        <input id="city" required aria-describedby="name-error">
-        <p class="error-message milli island-1-4 push-0" id="name-error">
-          <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
-          <span class="icon-label">Text Field 1/2 C is required!</span>
-        </p>
+      <div class="grid push-1-2">
+        <div class="unit xs-1-2">
+          <label class="milli" for="tf-1-2-a">Text Field 1/2 A</label>
+          <input id="tf-1-2-a" required aria-describedby="tf-1-2-a-error">
+          <p class="error-message milli island-1-4 push-0" id="tf-1-2-a-error">
+            <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Text Field 1/2 A is required!</span>
+          </p>
+        </div>
+        <div class="unit xs-1-2">
+          <label class="milli" for="tf-1-2-b">Text Field 1/2 B</label>
+          <input id="tf-1-2-b" required aria-describedby="tf-1-2-b-error">
+          <p class="error-message milli island-1-4 push-0" id="tf-1-2-b-error">
+            <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Text Field 1/2 B is required!</span>
+          </p>
+        </div>
       </div>
-      <div class="unit xs-1-2">
-        <label class="milli" for="provstat">Dropdown</label>
-        <select id="provstat" required aria-describedby="name-error">
-          <option value=""></option>
-          <option>Drop-A</option>
-          <option>Drop-B</option>
-        </select>
-        <p class="error-message milli island-1-4 push-0" id="name-error">
-          <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
-          <span class="icon-label">A dropdown option is required!</span>
-        </p>
+
+      <div class="push-1-2">
+        <div class="">
+          <label class="milli" for="tf-1">Text field</label>
+          <input id="tf-1" required aria-describedby="tf-1-error">
+          <p class="error-message milli island-1-4 push-0" id="tf-1-error">
+            <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Text field is required!</span>
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div class="section-2-btn form-btn pad-t-1-2">
-      <button class="btn micro" type="submit">NEXT STEP</button>
-    </div>
-  </form>
+      <div class="grid push-1-2">
+        <div class="unit xs-1-2">
+          <label class="milli" for="tf-1-2-c">Text Field 1/2 C</label>
+          <input id="tf-1-2-c" required aria-describedby="tf-1-2-c-error">
+          <p class="error-message milli island-1-4 push-0" id="tf-1-2-c-error">
+            <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Text Field 1/2 C is required!</span>
+          </p>
+        </div>
+        <div class="unit xs-1-2">
+          <label class="milli" for="drop">Dropdown</label>
+          <select id="drop" required aria-describedby="drop-error">
+            <option disabled selected value>Select an option</option>
+            <option>Drop-A</option>
+            <option>Drop-B</option>
+          </select>
+          <p class="error-message milli island-1-4 push-0" id="drop-error">
+            <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+            <span class="icon-label">A dropdown option is required!</span>
+          </p>
+        </div>
+      </div>
 
-</div>
+      <div class="section-2-btn form-btn pad-t-1-2">
+        <button class="btn micro" type="submit">NEXT STEP</button>
+      </div>
+    </form>
 
-<script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
+  </div>
+
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
 </body>
 </html>

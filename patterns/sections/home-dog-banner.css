@@ -15,7 +15,7 @@
 }
 
 .adopt-section-text {
-  padding: 0 1rem 0 1rem;
+  padding: 0 1rem;
   display: block;
   color: var(--color-primary);
   font-weight: 500;
@@ -23,33 +23,4 @@
 
 .card-container {
   padding-bottom: 2rem;
-}
-
-.adopt-card {
-
-}
-@media only screen and (min-width: 25em) {
-
-
-
-}
-
-@media only screen and (min-width: 38em) {
-/*
-  .adopt-section-text {
-    padding: 0 5rem 0 5rem;
-  }
-*/
-}
-
-@media only screen and (min-width: 60em) {
-
-
-
-}
-
-@media only screen and (min-width: 90em) {
-
-
-
 }

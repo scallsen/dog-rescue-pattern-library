@@ -1,6 +1,8 @@
 .cta-section {
   background-color: var(--color-primary-light);
   vertical-align: middle;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .top-section-img {
@@ -9,11 +11,6 @@
 
 .bot-section-img {
   display: none;
-}
-
-.cta-section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 @media only screen and (min-width: 38em) {

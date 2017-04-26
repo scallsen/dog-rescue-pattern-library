@@ -5,7 +5,7 @@
 
 .bot-bar {
   background-color: var(--color-primary);
-  box-shadow: 0px 2px 1px #888888;
+  box-shadow: 0 2px 1px #888;
 }
 
 .nav-btn {
@@ -32,12 +32,19 @@
   color: var(--color-accent);
 }
 
+#nav-link:hover #nav-link-img,
+#nav-link2:hover #nav-link-img2,
+#nav-link3:hover #nav-link-img3,
+#nav-link4:hover #nav-link-img4 {
+  color: var(--color-accent);
+}
+
 .page-nav-card {
   background-color: #f1f1f1;
   width: 20em;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0px 2px 1px #888888;
+  box-shadow: 0 2px 1px #888;
 }
 
 .page-nav-icon {

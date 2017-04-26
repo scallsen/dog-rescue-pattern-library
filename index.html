@@ -1060,19 +1060,19 @@
       &lt;/div>
     &lt;/div>
     &lt;div class="inline-block">
-      &lt;h3 class="white push-0">Dogname
+      &lt;h3 class="white push-0">Dogname&lt;/h3>
       &lt;ul class="white list-group pad-t-0">
         &lt;li class="micro form-info-top">BREED NAME&lt;/li>
         &lt;li class="micro form-info-top"># YEARS&lt;/li>
         &lt;li class="micro form-info-top">ID: 52313&lt;/li>
       &lt;/ul>
-    &lt;/h3>&lt;/div>
+    &lt;/div>
   &lt;/div>
 
   &lt;form class="section-1 max-length island" method="post" novalidate="">
 
     &lt;div class="relative push-1-2">
-      &lt;input type="checkbox" name="confirm-1" id="confirm-1" value="valuable" checkbox="" required aria-describedby="confirm-error">
+      &lt;input name="confirm-1" id="confirm-1" type="checkbox" required aria-describedby="confirm-error">
       &lt;label for="confirm-1" class="hide-custom-input notchecked" aria-hidden="true">
         &lt;i class="absolute icon i-32">&lt;svg>&lt;use xlink:href="../../images/icons.svg#checkbox-0"/>&lt;/svg>&lt;/i>
       &lt;/label>
@@ -1091,17 +1091,17 @@
 
     &lt;div class="grid push-1-2">
       &lt;div class="unit xs-1-2">
-        &lt;label class="milli" for="first-name">Text Field 1/2 A&lt;/label>
-        &lt;input id="first-name" required aria-describedby="name-error">
-        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+        &lt;label class="milli" for="tf-1-2-a">Text Field 1/2 A&lt;/label>
+        &lt;input id="tf-1-2-a" required aria-describedby="tf-1-2-a-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="tf-1-2-a-error">
           &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
           &lt;span class="icon-label">Text Field 1/2 A is required!&lt;/span>
         &lt;/p>
       &lt;/div>
       &lt;div class="unit xs-1-2">
-        &lt;label class="milli" for="last-name">Text Field 1/2 B&lt;/label>
-        &lt;input id="last-name" required aria-describedby="name-error">
-        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+        &lt;label class="milli" for="tf-1-2-b">Text Field 1/2 B&lt;/label>
+        &lt;input id="tf-1-2-b" required aria-describedby="tf-1-2-b-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="tf-1-2-b-error">
           &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
           &lt;span class="icon-label">Text Field 1/2 B is required!&lt;/span>
         &lt;/p>
@@ -1110,34 +1110,32 @@
 
     &lt;div class="push-1-2">
       &lt;div>
-        &lt;label class="milli" for="name">Text field&lt;/label>
-        &lt;input id="name" required aria-describedby="name-error">
-        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+        &lt;label class="milli" for="tf-1">Text field&lt;/label>
+        &lt;input id="tf-1" required aria-describedby="tf-1-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="tf-1-error">
           &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
           &lt;span class="icon-label">Text field is required!&lt;/span>
         &lt;/p>
       &lt;/div>
     &lt;/div>
 
-
-
     &lt;div class="grid push-1-2">
       &lt;div class="unit xs-1-2">
-        &lt;label class="milli" for="city">Text Field 1/2 C&lt;/label>
-        &lt;input id="city" required aria-describedby="name-error">
-        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+        &lt;label class="milli" for="tf-1-2-c">Text Field 1/2 C&lt;/label>
+        &lt;input id="tf-1-2-c" required aria-describedby="tf-1-2-c-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="tf-1-2-c-error">
           &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
           &lt;span class="icon-label">Text Field 1/2 C is required!&lt;/span>
         &lt;/p>
       &lt;/div>
       &lt;div class="unit xs-1-2">
-        &lt;label class="milli" for="provstat">Dropdown&lt;/label>
-        &lt;select id="provstat" required aria-describedby="name-error">
-          &lt;option value="">&lt;/option>
+        &lt;label class="milli" for="drop">Dropdown&lt;/label>
+        &lt;select id="drop" required aria-describedby="drop-error">
+          &lt;option disabled selected value="">Select an option&lt;/option>
           &lt;option>Drop-A&lt;/option>
           &lt;option>Drop-B&lt;/option>
         &lt;/select>
-        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="drop-error">
           &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
           &lt;span class="icon-label">A dropdown option is required!&lt;/span>
         &lt;/p>
@@ -1232,7 +1230,9 @@
           &lt;i class="page-nav-icon icon i-32">&lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow-back"/>&lt;/svg>&lt;/i>
         &lt;/a>
       &lt;/li>
-      &lt;span class="valign-middle milli">PAGE 1 OF 3&lt;/span>
+      &lt;li>
+        &lt;span class="valign-middle milli">PAGE 1 OF 3&lt;/span>
+      &lt;/li>
       &lt;li>
         &lt;a class="page-nav-btn gutter" href="#">
           &lt;i class="page-nav-icon icon i-32">&lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow-forwards"/>&lt;/svg>&lt;/i>
@@ -1306,7 +1306,7 @@
           &lt;a class="nav-link" id="nav-link" href="#">
             &lt;div class="pad-t-1-2 nav-btn current-page">
               &lt;div class="block">
-                &lt;i id="nav-link-item" class="nav-btn-icon icon i-32">&lt;svg>&lt;use xlink:href="../../images/icons.svg#icon-home"/>&lt;/svg>&lt;/i>
+                &lt;i id="nav-link-img" class="nav-btn-icon icon i-32">&lt;svg>&lt;use xlink:href="../../images/icons.svg#icon-home"/>&lt;/svg>&lt;/i>
               &lt;/div>
               &lt;div class="push-1-2 block">
                 &lt;span class="micro nav-btn-text" id="nav-link-item">HOME&lt;/span>
@@ -1319,7 +1319,7 @@
           &lt;a class="nav-link" id="nav-link2" href="#">
             &lt;div class="pad-t-1-2 nav-btn">
               &lt;div class="block">
-                &lt;i id="nav-link-item2" class="nav-btn-icon icon i-32">&lt;svg>&lt;use xlink:href="../../images/icons.svg#icon-donate"/>&lt;/svg>&lt;/i>
+                &lt;i id="nav-link-img2" class="nav-btn-icon icon i-32">&lt;svg>&lt;use xlink:href="../../images/icons.svg#icon-donate"/>&lt;/svg>&lt;/i>
               &lt;/div>
               &lt;div class="push-1-2 block">
                 &lt;span class="micro nav-btn-text" id="nav-link-item2">DONATE&lt;/span>
@@ -1332,7 +1332,7 @@
           &lt;a class="nav-link" id="nav-link3" href="#">
             &lt;div class="pad-t-1-2 nav-btn">
               &lt;div class="block">
-                &lt;i id="nav-link-item3" class="nav-btn-icon icon i-32">&lt;svg>&lt;use xlink:href="../../images/icons.svg#icon-adopt"/>&lt;/svg>&lt;/i>
+                &lt;i id="nav-link-img3" class="nav-btn-icon icon i-32">&lt;svg>&lt;use xlink:href="../../images/icons.svg#icon-adopt"/>&lt;/svg>&lt;/i>
               &lt;/div>
               &lt;div class="push-1-2 block">
                 &lt;span class="micro nav-btn-text" id="nav-link-item3">ADOPT&lt;/span>
@@ -1680,7 +1680,7 @@
             &lt;i class="page-nav-icon icon i-32">&lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow-back"/>&lt;/svg>&lt;/i>
           &lt;/a>
         &lt;/li>
-        &lt;span class="valign-middle milli">PAGE 1 OF 3&lt;/span>
+        &lt;li>&lt;span class="valign-middle milli">PAGE 1 OF 3&lt;/span>&lt;/li>
         &lt;li>
           &lt;a class="page-nav-btn gutter" href="#">
             &lt;i class="page-nav-icon icon i-32">&lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow-forwards"/>&lt;/svg>&lt;/i>
@@ -1814,8 +1814,7 @@
   &lt;/div>
 
   &lt;div class="home-section-2">
-    &lt;p class="adopt-section-text">These are just a few of the many dogs looking for a new home. &lt;br>Browse the entire list and find your next companion!&lt;/p>
-
+    &lt;p class="adopt-section-text">These are just a few of the many dogs looking for a new home.&lt;br>Browse the entire list and find your next companion!&lt;/p>
     &lt;a class="btn micro" href="#">MORE DOGS&lt;/a>
   &lt;/div>
 
@@ -1875,9 +1874,8 @@
               <code><pre id="sections-search-bar-code-sample-copy-chunk">&lt;div class="search-container"&gt;
   &lt;div>
     &lt;div class="search-bar relative">
-
-      &lt;input class="search-push" id="name" placeholder="       Search by breed, name, or ID">
-      &lt;div class="search-icon absolute page-nav-btn gutter" href="#">
+      &lt;input class="search-push" id="name" placeholder="Search by breed, name, or ID">
+      &lt;div class="search-icon absolute page-nav-btn gutter">
         &lt;i class="search-icon-color icon i-32">&lt;svg>&lt;use xlink:href="../../images/icons.svg#icon-search"/>&lt;/svg>&lt;/i>
       &lt;/div>
     &lt;/div>
