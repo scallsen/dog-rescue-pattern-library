@@ -60,6 +60,7 @@
               <li role="presentation"><a class="gutter pad-t-1-4 pad-b-1-4 block" role="tab" aria-controls="icons" href="#icons">Icons</a></li>
                 <li role="presentation"><a class="gutter pad-t-1-4 pad-b-1-4 block" role="tab" aria-controls="buttons" href="#buttons">Buttons</a></li>
                 <li role="presentation"><a class="gutter pad-t-1-4 pad-b-1-4 block" role="tab" aria-controls="cards" href="#cards">Cards</a></li>
+                <li role="presentation"><a class="gutter pad-t-1-4 pad-b-1-4 block" role="tab" aria-controls="footer" href="#footer">Footer</a></li>
                 <li role="presentation"><a class="gutter pad-t-1-4 pad-b-1-4 block" role="tab" aria-controls="form" href="#form">Form</a></li>
                 <li role="presentation"><a class="gutter pad-t-1-4 pad-b-1-4 block" role="tab" aria-controls="navigation" href="#navigation">Navigation</a></li>
                 <li role="presentation"><a class="gutter pad-t-1-4 pad-b-1-4 block" role="tab" aria-controls="sections" href="#sections">Sections</a></li>
@@ -667,11 +668,10 @@
   </div>
 
     <div class="pattern-desc milli island" style="">
-      <div class="max-length"><p>As the special button uses the accent colour, Special &amp; Regular should be alternated based on the importance of the action.</p>
-<p>-The special button is to be used for the most important action(s) available (e.g. Submit, Send)</p>
-<p>-The regular button is to be used where the background is a light colour</p>
-<p>-The light button is to be used for any button on a dark background, or to compliment the primary button</p>
-<p>-The ghost button should only be used when overlayed on an image, especially on the dog cards.</p>
+      <div class="max-length"><p><strong>special-button</strong> is to be used for the most important action(s) available (e.g. Submit, Send). It should be alternated with <em>regular-button</em> pr <em>light-button</em> based on the importance of the action.</p>
+<p><strong>regular-button</strong> is to be used where the background is a light colour.</p>
+<p><strong>light-button</strong> is to be used for any button on a dark background.</p>
+<p><strong>ghost-button</strong> should only be used when overlayed on a card such on the <em>adoption-card</em>.</p>
 </div>
     </div>
 
@@ -729,6 +729,12 @@
       </nav>
   </div>
 
+    <div class="pattern-desc milli island" >
+      <div class="max-length"><p><strong>adoption-card</strong> is to be used for listing animals for adoption only. Note: there are two links, one in the btn and one surrounding the image contents.</p>
+<p><strong>basic-card</strong> is to be used for information.</p>
+<p><strong>link-card</strong> is to be used as a link, essentially when a function&#39;s description is too large for a button.</p>
+</div>
+    </div>
 
   
 
@@ -921,6 +927,73 @@
 
 </section>
 
+        <section class="pattern" id="footer" role="tabpanel" hidden aria-hidden="true" style="">
+  <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative" style="">
+    <h2 class="pattern-name peta push-1-4">Footer</h2>
+        <ul class="list-group-inline gutter absolute pin-cr">
+            <li>
+              <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="footer-footer-code-sample">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-code"></use></svg>
+                </i>
+              </button>
+            </li>
+            <li>
+              <a class="center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/footer/footer.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-pop-out"></use></svg>
+                </i>
+              </a>
+            </li>
+        </ul>
+  </div>
+
+    <div class="pattern-desc milli island" style="">
+      <div class="max-length"><p>The footer is to be used on every page. </p>
+</div>
+    </div>
+
+  
+
+    <div class="pattern-details" id="footer-footer" style="">
+
+      <div class="pattern-examples pad-t-1-2 pad-b-1-2">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
+          <div class="resizeable-pattern relative" style="">
+            <iframe data-src="patterns/footer/footer.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="footer-footer-code-sample" tabindex="-1">
+            <div class="pattern-code relative milli island-1-2" style="">
+              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#footer-footer-code-sample-copy-chunk" hidden>
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-copy"></use></svg>
+                </i>
+              </button>
+              <code><pre id="footer-footer-code-sample-copy-chunk">&lt;section class="footer-nav"&gt;
+  &lt;span>Copyright 2017 Loyal Rescue&lt;/span>
+&lt;/section>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+
+</section>
+
         <section class="pattern" id="form" role="tabpanel" hidden aria-hidden="true" style="">
   <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative" style="">
     <h2 class="pattern-name peta push-1-4">Form</h2>
@@ -942,6 +1015,11 @@
         </ul>
   </div>
 
+    <div class="pattern-desc milli island" style="">
+      <div class="max-length"><p>The form should be divided into logical sections.</p>
+<p>Use a grid to divide form elements into 1/2 or 1/4 increments only.</p>
+</div>
+    </div>
 
   
 
@@ -1085,71 +1163,20 @@
     <h2 class="pattern-name peta push-1-4">Navigation</h2>
       <nav class="pattern-nav">
         <ol class="list-group-inline push-1-4">
-            <li><a href="#navigation-footer">Footer</a></li>
             <li><a href="#navigation-page-nav">Page nav</a></li>
             <li><a href="#navigation-top-nav">Top nav</a></li>
         </ol>
       </nav>
   </div>
 
+    <div class="pattern-desc milli island" >
+      <div class="max-length"><p><strong>top-nav</strong> is to be used at the top of every page on the website.</p>
+<p><strong>page-nav</strong> is to be used for multi-page pages. (Adoption Page).</p>
+</div>
+    </div>
 
   
 
-    <div class="pattern-details" id="navigation-footer" style="">
-        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
-          <h3 class="pattern-name tera push-1-8">Footer</h3>
-            <ul class="list-group-inline gutter absolute pin-cr">
-                <li>
-                  <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="navigation-footer-code-sample">
-                    <i class="icon i-18">
-                      <svg><use xlink:href="#icon-code"></use></svg>
-                    </i>
-                  </button>
-                </li>
-                <li>
-                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/navigation/footer.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
-                    <i class="icon i-18">
-                      <svg><use xlink:href="#icon-pop-out"></use></svg>
-                    </i>
-                  </a>
-                </li>
-            </ul>
-        </div>
-
-      <div class="pattern-examples pad-t-1-2 pad-b-1-2">
-        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
-          <div class="resizeable-pattern relative" style="">
-            <iframe data-src="patterns/navigation/footer.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
-              <div class="resizeable-pattern-length">
-                <div class="resize-handle resize-handle-left" style="">
-                  <i class="icon i-18">
-                    <svg><use xlink:href="#icon-resize-handle" /></svg>
-                  </i>
-                </div>
-                <div class="resize-handle resize-handle-right" style="">
-                  <i class="icon i-18">
-                    <svg><use xlink:href="#icon-resize-handle" /></svg>
-                  </i>
-                </div>
-              </div>
-          </div>
-        </div>
-
-          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="navigation-footer-code-sample" tabindex="-1">
-            <div class="pattern-code relative milli island-1-2" style="">
-              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#navigation-footer-code-sample-copy-chunk" hidden>
-                <i class="icon i-18">
-                  <svg><use xlink:href="#icon-copy"></use></svg>
-                </i>
-              </button>
-              <code><pre id="navigation-footer-code-sample-copy-chunk">&lt;section class="footer-nav"&gt;
-  &lt;span>Copyright 2017 Loyal Rescue&lt;/span>
-&lt;/section>
-</pre></code>
-            </div>
-          </div>
-      </div>
-    </div>
     <div class="pattern-details" id="navigation-page-nav" style="">
         <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
           <h3 class="pattern-name tera push-1-8">Page nav</h3>
@@ -1267,8 +1294,10 @@
                 </i>
               </button>
               <code><pre id="navigation-top-nav-code-sample-copy-chunk">&lt;header&gt;
-  &lt;div class="top-bar push-0">
-
+  &lt;div class="top-bar">
+    &lt;div class="max-length">
+      &lt;img class="white img-flex logo" src="../../images/logo.svg" alt="">
+    &lt;/div>
   &lt;/div>
   &lt;div class="bot-bar">
     &lt;nav class="max-length">
@@ -1311,20 +1340,6 @@
             &lt;/div>
           &lt;/a>
         &lt;/li>
-
-        &lt;li>
-          &lt;a class="nav-link" id="nav-link4" href="#">
-            &lt;div class="pad-t-1-2 nav-btn">
-              &lt;div class="block">
-                &lt;i id="nav-link-item4" class="nav-btn-icon icon i-32">&lt;svg>&lt;use xlink:href="../../images/icons.svg#icon-user"/>&lt;/svg>&lt;/i>
-              &lt;/div>
-              &lt;div class="push-1-2 block">
-                &lt;span class="micro nav-btn-text" id="nav-link-item4">LOGIN&lt;/span>
-              &lt;/div>
-            &lt;/div>
-          &lt;/a>
-        &lt;/li>
-
       &lt;/ul>
     &lt;/nav>
   &lt;/div>
@@ -1352,6 +1367,14 @@
       </nav>
   </div>
 
+    <div class="pattern-desc milli island" >
+      <div class="max-length"><p><strong>cta-banner</strong> is a call to action banner to be used on the home-page. It&#39;s content and image may be replaced or adjusted depending on the current focus.</p>
+<p><strong>dog-grid</strong> is primarily used on the dog adoption page. It can be broken down into smaller elements to build others if needed.</p>
+<p><strong>home-dog-banner</strong> is a a section for the home page. It uses a part of the <em>dog grid</em> section.</p>
+<p><strong>search-bar</strong> is only to be used on the dog adoption page. It should be placed in the navigation below <em>top-nav</em>.</p>
+<p><strong>section-text-span</strong> is used to highlight important information. It&#39;s text will depend on the page.</p>
+</div>
+    </div>
 
   
 
