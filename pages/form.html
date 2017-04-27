@@ -82,7 +82,7 @@
         </div>
       </div>
       <div class="inline-block">
-        <h3 class="white push-0">Dogname</h2>
+        <h3 class="white push-0">Dogname</h3>
         <ul class="white list-group pad-t-0">
           <li class="micro form-info-top">BREED NAME</li>
           <li class="micro form-info-top"># YEARS</li>
@@ -93,13 +93,13 @@
 
     <form class="section-1 max-length island" method="post" novalidate>
 
-    <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
-      <h3 class="push-0">
-        <i class="icon i-32"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
-        <span class="icon-label">There are items that require your attention</span>
-      </h3>
-    </div>
-<!--SECTION 1-CHECKBOXES-->
+      <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
+        <h3 class="push-0">
+          <i class="icon i-32"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <span class="icon-label">There are items that require your attention</span>
+        </h3>
+      </div>
+      <!--SECTION 1-CHECKBOXES-->
       <div class="push-1-2">
 
         <div class="push-1-2">
@@ -111,7 +111,7 @@
           <label for="checkbox-1" class="hide-custom-input notchecked" aria-hidden="true">
             <i class="absolute icon i-32"><svg><use xlink:href="../images/icons.svg#checkbox-0" /></svg></i>
           </label>
-          <label for="confirm-1" class="hide-custom-input checked" aria-hidden="true">
+          <label for="checkbox-1" class="hide-custom-input checked" aria-hidden="true">
             <i class="absolute icon i-32"><svg><use xlink:href="../images/icons.svg#checkbox-1" /></svg></i>
           </label>
           <label class="terms" for="checkbox-1">
@@ -226,7 +226,7 @@
         </div>
 
       </div>
-<!--SECTION 2-CONTACT INFORMATION-->
+      <!--SECTION 2-CONTACT INFORMATION-->
       <div class="push-1-2">
 
         <div class="push-1-2">
@@ -341,7 +341,7 @@
         </div>
 
       </div>
-<!--SECTION 3-EMPLOYER INFORMATION-->
+      <!--SECTION 3-EMPLOYER INFORMATION-->
       <div class="push-1-2">
 
         <div class="push-1-2">
@@ -428,7 +428,7 @@
         </div>
 
       </div>
-<!--SECTION 3-HOME INFORMATION-->
+      <!--SECTION 3-HOME INFORMATION-->
       <div class="push-1-2">
 
         <div class="push-1-2">
@@ -571,10 +571,8 @@
       <div class="section-2-btn form-btn pad-t-1-2">
         <button class="btn micro" type="submit">SUBMIT</button>
       </div>
-    </div>
 
     </form>
-    <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
 
   </div>
 
@@ -588,23 +586,9 @@
     <span>Copyright 2017 Loyal Rescue</span>
   </section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<script>
-  $('.section-1-btn').on('click', function (e) {
-  e.preventDefault();
-  $('.section-1').toggleClass('hide');
-  });
-</script>
-
-<script>
-  $('.section-1-btn').on('click', function (e) {
-  e.preventDefault();
-  $('.section-2').toggleClass('hide');
-  });
-</script>
-
-
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../common/form-page.js"></script>
 </body>
 
 </html>
