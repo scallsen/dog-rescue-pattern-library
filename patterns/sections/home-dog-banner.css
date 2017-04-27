@@ -4,6 +4,7 @@
   padding-top: 5rem;
   padding-bottom: 5rem;
   text-align: center;
+  padding-top: 0;
 }
 
 .home-section-2 {
@@ -23,4 +24,27 @@
 
 .card-container {
   padding-bottom: 2rem;
+}
+
+/* .container IS ONLY USED FOR THE CONTAINER THAT CONTAINS THIS ELEMENT WHEN BEING USED AS AN ACTUAL ELEMENT */
+
+.container {
+  margin: auto;
+  width: 100%;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .container {
+    width: 90%;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .container {
+    width: 80%;
+  }
+
 }

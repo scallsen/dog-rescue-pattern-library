@@ -36,6 +36,11 @@ html {
   border-color: #f33;
 }
 
+.is-validated select:invalid,
+.is-validated select[type="checkbox"]:invalid + label::before {
+  border-color: #f33;
+}
+
 .error-message {
   display: none;
   background-color: #fee;

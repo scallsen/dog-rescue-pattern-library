@@ -18,10 +18,9 @@
   <link href="../patterns/sections/home-dog-banner.css" rel="stylesheet">
   <link href="../patterns/form/forms.css" rel="stylesheet">
   <link href="../patterns/footer/footer.css" rel="stylesheet">
-
 </head>
 <body>
-  <header class="push-1-2">
+  <header class="push">
     <div class="top-bar">
       <div class="max-length">
         <img class="white img-flex logo" src="../../images/logo.svg" alt="">
@@ -34,7 +33,7 @@
             <a class="nav-link" id="nav-link" href="#">
               <div class="pad-t-1-2 nav-btn">
                 <div class="block">
-                  <i id="nav-link-item" class="nav-btn-icon icon i-32"><svg><use xlink:href="../../images/icons.svg#icon-home" /></svg></i>
+                  <i id="nav-link-img" class="nav-btn-icon icon i-32"><svg><use xlink:href="../../images/icons.svg#icon-home" /></svg></i>
                 </div>
                 <div class="push-1-2 block">
                   <span class="micro nav-btn-text" id="nav-link-item">HOME</span>
@@ -45,9 +44,9 @@
 
           <li>
             <a class="nav-link" id="nav-link2" href="#">
-              <div class="pad-t-1-2 nav-btn current-page">
+              <div class="pad-t-1-2 nav-btn">
                 <div class="block">
-                  <i id="nav-link-item2" class="nav-btn-icon icon i-32"><svg><use xlink:href="../../images/icons.svg#icon-donate" /></svg></i>
+                  <i id="nav-link-img2" class="nav-btn-icon icon i-32"><svg><use xlink:href="../../images/icons.svg#icon-donate" /></svg></i>
                 </div>
                 <div class="push-1-2 block">
                   <span class="micro nav-btn-text" id="nav-link-item2">DONATE</span>
@@ -58,9 +57,9 @@
 
           <li>
             <a class="nav-link" id="nav-link3" href="#">
-              <div class="pad-t-1-2 nav-btn">
+              <div class="pad-t-1-2 nav-btn current-page">
                 <div class="block">
-                  <i id="nav-link-item3" class="nav-btn-icon icon i-32"><svg><use xlink:href="../../images/icons.svg#icon-adopt" /></svg></i>
+                  <i id="nav-link-img3" class="nav-btn-icon icon i-32"><svg><use xlink:href="../../images/icons.svg#icon-adopt" /></svg></i>
                 </div>
                 <div class="push-1-2 block">
                   <span class="micro nav-btn-text" id="nav-link-item3">ADOPT</span>
@@ -68,27 +67,13 @@
               </div>
             </a>
           </li>
-
-          <li>
-            <a class="nav-link" id="nav-link4" href="#">
-              <div class="pad-t-1-2 nav-btn">
-                <div class="block">
-                  <i id="nav-link-item4" class="nav-btn-icon icon i-32"><svg><use xlink:href="../../images/icons.svg#icon-user" /></svg></i>
-                </div>
-                <div class="push-1-2 block">
-                  <span class="micro nav-btn-text" id="nav-link-item4">LOGIN</span>
-                </div>
-              </div>
-            </a>
-          </li>
-
         </ul>
       </nav>
     </div>
 
   </header>
 
-  <div class="max-length form-container">
+  <div class="max-length form-container push">
 
     <div class="max-length form-topper">
       <div class="island inline-block">
@@ -106,200 +91,492 @@
       </div>
     </div>
 
-  <form class="max-length island" method="post" novalidate>
+    <form class="section-1 max-length island" method="post" novalidate>
 
-    <div class="form-section section-1">
-      <div class="relative push-1-2">
-        <input type="checkbox" name="confirm-1" id="confirm-1" value="valuable" checkbox required aria-describedby="confirm-error">
-        <label for="confirm-1" class="hide-custom-input notchecked" aria-hidden="true">
-          <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-0" /></svg></i>
-        </label>
-
-        <label for="confirm-1" class="hide-custom-input checked" aria-hidden="true">
-          <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-1" /></svg></i>
-        </label>
-
-        <label class="terms" for="confirm-1">I understand that this application form is not a guarantee that the dog I have applied for will still be available if my application to adopt a dog is approved, as there could be several applications for this dog already in progress or the dog may have a requirement that my home does not provide.</label>
-
-        <p class="error-message milli island-1-4 push-0" id="confirm-error">
-          <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
-          <span class="icon-label">You must agree to all terms and conditions!</span>
-        </p>
-      </div>
-      <div class="relative push-1-2">
-        <input type="checkbox" name="confirm-2" id="confirm-2" value="valuable" checkbox required aria-describedby="confirm-error">
-        <label for="confirm-2" class="hide-custom-input notchecked" aria-hidden="true">
-          <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-0" /></svg></i>
-        </label>
-
-        <label for="confirm-2" class="hide-custom-input checked" aria-hidden="true">
-          <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-1" /></svg></i>
-        </label>
-
-        <label class="terms" for="confirm-2">I understand that LOYAL Rescue Inc. does not approve their dogs to applicants on a "first come first serve" basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.
-        </label>
-
-        <p class="error-message milli island-1-4 push-0" id="confirm-error">
-          <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
-          <span class="icon-label">You must agree to all terms and conditions!</span>
-        </p>
-      </div>
-      <div class="relative push-1-2">
-        <input type="checkbox" name="confirm-3" id="confirm-3" value="valuable" checkbox required aria-describedby="confirm-error">
-        <label for="confirm-3" class="hide-custom-input notchecked" aria-hidden="true">
-          <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-0" /></svg></i>
-        </label>
-
-        <label for="confirm-3" class="hide-custom-input checked" aria-hidden="true">
-          <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-1" /></svg></i>
-        </label>
-
-        <label class="terms" for="confirm-3">In the event that the dog I have applied for is approved to another adopter before my application is processed I will select another dog from the LOYAL Rescue Inc. website and continue with my application screening.
-        </label>
-
-        <p class="error-message milli island-1-4 push-0" id="confirm-error">
-          <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
-          <span class="icon-label">You must agree to all terms and conditions!</span>
-        </p>
-      </div>
-      <div class="relative push-1-2">
-        <input type="checkbox" name="confirm-4" id="confirm-4" value="valuable" checkbox required aria-describedby="confirm-error">
-        <label for="confirm-4" class="hide-custom-input notchecked" aria-hidden="true">
-          <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-0" /></svg></i>
-        </label>
-
-        <label for="confirm-4" class="hide-custom-input checked" aria-hidden="true">
-          <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-1" /></svg></i>
-        </label>
-
-        <label class="terms" for="confirm-4">I understand and accept that virtually all "rescued" dogs will have behavioral issues of varying degrees. Many of these dogs have been abused or neglected and have a tendency to be more timid and/or defensive than a dog raised from birth by a knowledgeable and responsible dog owner. I understand and accept that while all known behavioral issues will be disclosed prior to the adoption being completed, it is entirely possible that minor or major behavioral issues may arise after the adoption has occurred and the dog is in my home. I am not expecting a pre-trained dog and am willing to work with this dog to help it overcome any issues it may have, or develops while under my care.
-        </label>
-
-        <p class="error-message milli island-1-4 push-0" id="confirm-error">
-          <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
-          <span class="icon-label">You must agree to all terms and conditions!</span>
-        </p>
-      </div>
-      <div class="relative push-1-2">
-        <input type="checkbox" name="confirm-5" id="confirm-5" value="valuable" checkbox required aria-describedby="confirm-error">
-        <label for="confirm-5" class="hide-custom-input notchecked" aria-hidden="true">
-          <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-0" /></svg></i>
-        </label>
-
-        <label for="confirm-5" class="hide-custom-input checked" aria-hidden="true">
-          <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-1" /></svg></i>
-        </label>
-
-        <label class="terms" for="confirm-5">I understand and accept that although all LOYAL Rescue Inc. dogs have been evaluated by a veterinarian, and that a copy of the veterinarian's report(s) will be provided at the time of adoption, it is possible that the dog may have minor or major medical issues that are undiagnosed. I understand and accept that the approximate age of the dog is estimated by a veterinarian and may be slightly or significantly inaccurate.
-        </label>
-
-        <p class="error-message milli island-1-4 push-0" id="confirm-error">
-          <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
-          <span class="icon-label">You must agree to all terms and conditions!</span>
-        </p>
-      </div>
-      <div class="relative push-1-2">
-        <input type="checkbox" name="confirm-6" id="confirm-6" value="valuable" checkbox required aria-describedby="confirm-error">
-        <label for="confirm-6" class="hide-custom-input notchecked" aria-hidden="true">
-          <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-0" /></svg></i>
-        </label>
-
-        <label for="confirm-6" class="hide-custom-input checked" aria-hidden="true">
-          <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-1" /></svg></i>
-        </label>
-
-        <label class="terms" for="confirm-6">I have verfied that this dog is being fostered in a location close enough for me to personally travel to, in order to adopt this dog, should I be the approved adopter.
-        </label>
-
-        <p class="error-message milli island-1-4 push-0" id="confirm-error">
-          <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
-          <span class="icon-label">You must agree to all terms and conditions!</span>
-        </p>
-      </div>
-      <div class="form-btn pad-t-1-2">
-        <a href="#section-2" class="section-1-btn btn micro" >NEXT STEP</a>
-      </div>
+    <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
+      <h3 class="push-0">
+        <i class="icon i-32"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+        <span class="icon-label">There are items that require your attention</span>
+      </h3>
     </div>
+<!--SECTION 1-CHECKBOXES-->
+      <div class="push-1-2">
 
-    <div id="section-2" class="section-2 hide">
-      <div class="grid push-1-2">
+        <div class="push-1-2">
+          <h2>Terms and Conditions</h2>
+        </div>
 
-        <div class="unit xs-1">
+        <div class="push-1-2">
+          <input id="checkbox-1" type="checkbox" required aria-describedby="checkbox-1-error">
+          <label for="checkbox-1" class="hide-custom-input notchecked" aria-hidden="true">
+            <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-0" /></svg></i>
+          </label>
+          <label for="confirm-1" class="hide-custom-input checked" aria-hidden="true">
+            <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-1" /></svg></i>
+          </label>
+          <label class="terms" for="checkbox-1">
+            I understand that this application form is not a guarantee that the dog I have applied for will still be available if my application to adopt a dog is approved, as there could be several applications for this dog already in progress or the dog may have a requirement that my home does not provide.
+          </label>
+          <p class="error-message milli island-1-4 push-0" id="checkbox-1-error">
+            <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+            <span class="icon-label">You must agree with the terms and conditions!</span>
+          </p>
+        </div>
+
+        <div class="push-1-2">
+          <input id="checkbox-2" type="checkbox" required aria-describedby="checkbox-2-error">
+          <label for="checkbox-2" class="hide-custom-input notchecked" aria-hidden="true">
+            <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-0" /></svg></i>
+          </label>
+          <label for="checkbox-2" class="hide-custom-input checked" aria-hidden="true">
+            <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-1" /></svg></i>
+          </label>
+          <label class="terms" for="checkbox-2">
+            I understand that LOYAL Rescue Inc. does not approve their dogs to applicants on a "first come first serve" basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.
+          </label>
+          <p class="error-message milli island-1-4 push-0" id="checkbox-2-error">
+            <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+            <span class="icon-label">You must agree with the terms and conditions!</span>
+          </p>
+        </div>
+
+        <div class="push-1-2">
+          <input id="checkbox-3" type="checkbox" required aria-describedby="checkbox-3-error">
+          <label for="checkbox-3" class="hide-custom-input notchecked" aria-hidden="true">
+            <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-0" /></svg></i>
+          </label>
+          <label for="checkbox-3" class="hide-custom-input checked" aria-hidden="true">
+            <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-1" /></svg></i>
+          </label>
+          <label class="terms" for="checkbox-3">
+            In the event that the dog I have applied for is approved to another adopter before my application is processed I will select another dog from the LOYAL Rescue Inc. website and continue with my application screening.
+          </label>
+          <p class="error-message milli island-1-4 push-0" id="checkbox-3-error">
+            <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+            <span class="icon-label">You must agree with the terms and conditions!</span>
+          </p>
+        </div>
+
+        <div class="push-1-2">
+          <input id="checkbox-4" type="checkbox" required aria-describedby="checkbox-4-error">
+          <label for="checkbox-4" class="hide-custom-input notchecked" aria-hidden="true">
+            <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-0" /></svg></i>
+          </label>
+          <label for="checkbox-4" class="hide-custom-input checked" aria-hidden="true">
+            <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-1" /></svg></i>
+          </label>
+          <label class="terms" for="checkbox-4">
+            I understand and accept that virtually all "rescued" dogs will have behavioral issues of varying degrees. Many of these dogs have been abused or neglected and have a tendency to be more timid and/or defensive than a dog raised from birth by a knowledgeable and responsible dog owner. I understand and accept that while all known behavioral issues will be disclosed prior to the adoption being completed, it is entirely possible that minor or major behavioral issues may arise after the adoption has occurred and the dog is in my home. I am not expecting a pre-trained dog and am willing to work with this dog to help it overcome any issues it may have, or develops while under my care.
+          </label>
+          <p class="error-message milli island-1-4 push-0" id="checkbox-4-error">
+            <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+            <span class="icon-label">You must agree with the terms and conditions!</span>
+          </p>
+        </div>
+
+        <div class="push-1-2">
+          <input id="checkbox-5" type="checkbox" required aria-describedby="checkbox-5-error">
+          <label for="checkbox-5" class="hide-custom-input notchecked" aria-hidden="true">
+            <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-0" /></svg></i>
+          </label>
+          <label for="checkbox-5" class="hide-custom-input checked" aria-hidden="true">
+            <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-1" /></svg></i>
+          </label>
+          <label class="terms" for="checkbox-5">
+            I understand and accept that although all LOYAL Rescue Inc. dogs have been evaluated by a veterinarian, and that a copy of the veterinarian's report(s) will be provided at the time of adoption, it is possible that the dog may have minor or major medical issues that are undiagnosed. I understand and accept that the approximate age of the dog is estimated by a veterinarian and may be slightly or significantly inaccurate.
+          </label>
+          <p class="error-message milli island-1-4 push-0" id="checkbox-5-error">
+            <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+            <span class="icon-label">You must agree with the terms and conditions!</span>
+          </p>
+        </div>
+
+        <div class="push-1-2">
+          <input id="checkbox-6" type="checkbox" required aria-describedby="checkbox-6-error">
+          <label for="checkbox-6" class="hide-custom-input notchecked" aria-hidden="true">
+            <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-0" /></svg></i>
+          </label>
+          <label for="checkbox-6" class="hide-custom-input checked" aria-hidden="true">
+            <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-1" /></svg></i>
+          </label>
+          <label class="terms" for="checkbox-6">
+            I have verfied that this dog is being fostered in a location close enough for me to personally travel to, in order to adopt this dog, should I be the approved adopter.
+          </label>
+          <p class="error-message milli island-1-4 push-0" id="checkbox-6-error">
+            <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+            <span class="icon-label">You must agree with the terms and conditions!</span>
+          </p>
+        </div>
+
+        <div class="push-1-2">
+          <input id="checkbox-7" type="checkbox" required aria-describedby="checkbox-7-error">
+          <label for="checkbox-7" class="hide-custom-input notchecked" aria-hidden="true">
+            <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-0" /></svg></i>
+          </label>
+          <label for="checkbox-7" class="hide-custom-input checked" aria-hidden="true">
+            <i class="absolute icon i-32"><svg><use xlink:href="../../images/icons.svg#checkbox-1" /></svg></i>
+          </label>
+          <label class="terms" for="checkbox-7">
+            I have thoroughly read and understand the information in the FAQ section of the LOYAL Rescue Inc. website available here.
+          </label>
+          <p class="error-message milli island-1-4 push-0" id="checkbox-7-error">
+            <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+            <span class="icon-label">You must agree with the terms and conditions!</span>
+          </p>
+        </div>
+
+      </div>
+<!--SECTION 2-CONTACT INFORMATION-->
+      <div class="push-1-2">
+
+        <div class="push-1-2">
           <h2>Contact Information</h2>
         </div>
-        <div class="unit xs-1-2">
-          <label class="milli" for="first-name">First Name</label>
-          <input id="first-name" required aria-describedby="firstname-error">
-          <p class="error-message milli island-1-4 push-0" id="name-error">
-            <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
-            <span class="icon-label">Your First Name is required!</span>
-          </p>
+
+        <div class="grid push-1-2">
+          <div class="unit xs-1-2">
+            <label class="milli" for="user-first-name">First Name</label>
+            <input id="user-first-name" required aria-describedby="user-first-name-error">
+            <p class="error-message milli island-1-4 push-0" id="user-first-name-error">
+              <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Your first name is required!</span>
+            </p>
+          </div>
+          <div class="unit xs-1-2">
+            <label class="milli" for="user-last-name">Last Name</label>
+            <input id="user-last-name" required aria-describedby="user-last-name-error">
+            <p class="error-message milli island-1-4 push-0" id="user-last-name-error">
+              <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Your last name is required!</span>
+            </p>
+          </div>
         </div>
-        <div class="unit xs-1-2">
-          <label class="milli" for="last-name">Last Name</label>
-          <input id="last-name" required aria-describedby="lastname-error">
-          <p class="error-message milli island-1-4 push-0" id="lastname-error">
-            <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
-            <span class="icon-label">Your Last Name is required!</span>
-          </p>
-        </div>
-      </div>
 
         <div class="push-1-2">
           <div class="">
-            <label class="milli" for="email">Email Address</label>
-            <input id="email" required aria-describedby="email-error">
-            <p class="error-message milli island-1-4 push-0" id="email-error">
+            <label class="milli" for="user-address">Address</label>
+            <input id="user-address" required aria-describedby="user-address-error">
+            <p class="error-message milli island-1-4 push-0" id="user-address-error">
               <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
-              <span class="icon-label">Your email address is required!</span>
+              <span class="icon-label">Your address is required!</span>
             </p>
           </div>
         </div>
 
         <div class="grid push-1-2">
           <div class="unit xs-1-2">
-            <label class="milli" for="city">City</label>
-            <input id="city" required aria-describedby="city-error">
-            <p class="error-message milli island-1-4 push-0" id="city-error">
+            <label class="milli" for="user-city">City</label>
+            <input id="user-city" required aria-describedby="user-city-error">
+            <p class="error-message milli island-1-4 push-0" id="user-city-error">
               <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
-              <span class="icon-label">What city do you live in?</span>
+              <span class="icon-label">Your city is required!</span>
             </p>
           </div>
           <div class="unit xs-1-2">
-            <label class="milli" for="provstat">Province</label>
-            <select id="province" required aria-describedby="province-error">
-              <option value=""></option>
-              <option>AB Alberta</option>
-              <option>BC British Columbia</option>
-              <option>MB Manitoba</option>
-              <option>NL Newfoundland & Labrador</option>
-              <option>NT Northwest Territories</option>
-              <option>NS Nova Scotia</option>
-              <option>NU Nunavut</option>
-              <option>ON Ontario</option>
-              <option>PE Prince Edward Island</option>
-              <option>QC Quebec</option>
-              <option>SK Saskatchewan</option>
-              <option>YT Yukon</option>
+            <label class="milli" for="user-province">Province</label>
+            <select id="user-province" required aria-describedby="user-province-error">
+              <option disabled selected value>Select an option</option>
+              <option>Alberta</option>
+              <option>British Columbia</option>
+              <option>Manitoba</option>
+              <option>New Brunswick</option>
+              <option>Northwest Territories</option>
+              <option>Nova Scotia</option>
+              <option>Nunavut</option>
+              <option>Ontario</option>
+              <option>Prince Edward Island</option>
+              <option>Quebec</option>
+              <option>Saksatchewan</option>
+              <option>Yukon</option>
             </select>
-            <p class="error-message milli island-1-4 push-0" id="province-error">
+            <p class="error-message milli island-1-4 push-0" id="user-province-error">
               <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
-              <span class="icon-label">What province do you live in?</span>
+              <span class="icon-label">Your province is required!</span>
             </p>
           </div>
         </div>
 
-    </div>
+        <div class="grid push-1-2">
+          <div class="unit xs-1-2">
+            <label class="milli" for="user-postalcode">Postal Code</label>
+            <input id="user-postalcode" required aria-describedby="user-postalcode-error">
+            <p class="error-message milli island-1-4 push-0" id="user-postalcode-error">
+              <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Your postal code is required!</span>
+            </p>
+          </div>
+          <div class="unit xs-1-2">
+            <label class="milli" for="user-country">Country</label>
+            <select id="user-country" required aria-describedby="user-country-error">
+              <option disabled selected value>Select an option</option>
+              <option>Canada</option>
+            </select>
+            <p class="error-message milli island-1-4 push-0" id="user-country-error">
+              <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Your country is required!</span>
+            </p>
+          </div>
+        </div>
 
-    <div class="section-3 hide">
-      <div class="pad-t-1-2">
-        <button type="submit" class="btn micro" >NEXT STEP</button>
+        <div class="push-1-2">
+          <div class="">
+            <label class="milli" for="user-email">Email Address</label>
+            <input id="user-email" required aria-describedby="user-email-error" type="email" placeholder="john.smith@example.com">
+            <p class="error-message milli island-1-4 push-0" id="user-email-error">
+              <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Your email address is required!</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="push-1-2">
+          <div class="">
+            <label class="milli" for="user-phone">Phone Number</label>
+            <input id="user-phone" required aria-describedby="user-phone-error" type="tel" placeholder="(123)456-7890">
+            <p class="error-message milli island-1-4 push-0" id="user-phone-error">
+              <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Your phone number is required!</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+<!--SECTION 3-EMPLOYER INFORMATION-->
+      <div class="push-1-2">
+
+        <div class="push-1-2">
+          <h2>Employer Information</h2>
+        </div>
+
+        <div class="push-1-2">
+          <div class="">
+            <label class="milli" for="employer-name">Employer's Name</label>
+            <input id="employer-name" required aria-describedby="employer-name-error">
+            <p class="error-message milli island-1-4 push-0" id="employer-name-error">
+              <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Your employer's name is required!</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="push-1-2">
+          <div class="">
+            <label class="milli" for="job-title">Job Title</label>
+            <input id="job-title" required aria-describedby="job-title-error">
+            <p class="error-message milli island-1-4 push-0" id="job-title-error">
+              <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Your employer's name is required!</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="push-1-2">
+          <div class="">
+            <label class="milli" for="employer-phone">Employer's Phone Number</label>
+            <input id="employer-phone" required aria-describedby="employer-phone-error" type="tel" placeholder="(123)456-7890">
+            <p class="error-message milli island-1-4 push-0" id="employer-phone-error">
+              <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Your employer's phone number is required!</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="grid push-1-2">
+          <div class="unit xs-1-2">
+            <label class="milli" for="employed-since-month">Employed Since</label>
+            <select id="employed-since-month" required aria-describedby="employed-since-month-error">
+              <option disabled selected value>Month</option>
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>
+            <p class="error-message milli island-1-4 push-0" id="employed-since-month-error">
+              <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Your employment start date is required!</span>
+            </p>
+          </div>
+          <div class="unit xs-1-2">
+            <div class="grid">
+              <div class="unit xs-1-2">
+                <label class="milli" for="employed-since-day">Day</label>
+                <input id="employed-since-day" required aria-describedby="employed-since-day-error">
+                <p class="error-message milli island-1-4 push-0" id="employed-since-day-error">
+                  <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+                  <span class="icon-label">Day required!</span>
+                </p>
+              </div>
+              <div class="unit xs-1-2">
+                <label class="milli" for="employed-since-year">Year</label>
+                <input id="employed-since-year" required aria-describedby="employed-since-year-error">
+                <p class="error-message milli island-1-4 push-0" id="employed-since-year-error">
+                  <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+                  <span class="icon-label">Year required!</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+<!--SECTION 3-HOME INFORMATION-->
+      <div class="push-1-2">
+
+        <div class="push-1-2">
+          <h2>Home Environment</h2>
+        </div>
+
+        <div class="grid push-1-2">
+          <div class="unit xs-1-2">
+            <label class="milli" for="home-style">Home Style</label>
+            <select id="home-style" required aria-describedby="home-style-error">
+              <option disabled selected value>Select an option</option>
+              <option>House</option>
+              <option>Semi-detached</option>
+              <option>Townhouse</option>
+              <option>Apartment</option>
+              <option>Mobile Home</option>
+            </select>
+            <p class="error-message milli island-1-4 push-0" id="home-style-error">
+              <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Your home style is required!</span>
+            </p>
+          </div>
+          <div class="unit xs-1-2">
+            <label class="milli" for="home-ownership">Ownership</label>
+            <select id="home-ownership" required aria-describedby="home-ownership-error">
+              <option disabled selected value>Select an option</option>
+              <option>Rent</option>
+              <option>Own</option>
+              <option>Live with Parents</option>
+              <option>Rent-to-own</option>
+              <option>Other</option>
+            </select>
+            <p class="error-message milli island-1-4 push-0" id="home-ownership-error">
+              <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Your home ownership is required!</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="grid push-1-2">
+          <div class="unit xs-1-2">
+            <label class="milli" for="move-in-month">Move in date</label>
+            <select id="move-in-month" required aria-describedby="move-in-month-error">
+              <option disabled selected value>Month</option>
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>
+            <p class="error-message milli island-1-4 push-0" id="move-in-month-error">
+              <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Your move in month is required!</span>
+            </p>
+          </div>
+          <div class="unit xs-1-2">
+            <label class="milli" for="move-in-year">Year</label>
+            <input id="move-in-year" required aria-describedby="move-in-year-error">
+            <p class="error-message milli island-1-4 push-0" id="move-in-year-error">
+              <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Your move in year is required!</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="push-1-2">
+          <div class="">
+            <label class="milli" for="landlord-name">Landlord Name</label>
+            <input id="landlord-name">
+          </div>
+        </div>
+
+        <div class="push-1-2">
+          <div class="">
+            <label class="milli" for="landlord-phone">Landlord Phone Number</label>
+            <input id="landlord-phone" type="tel">
+          </div>
+        </div>
+
+        <div class="grid push-1-2">
+          <div class="unit xs-1-2">
+            <label class="milli" for="environment-type">Environment Type</label>
+            <select id="environment-type" required aria-describedby="environment-type-error">
+              <option disabled selected value>Please select one</option>
+              <option>City</option>
+              <option>Suburban</option>
+              <option>County</option>
+            </select>
+            <p class="error-message milli island-1-4 push-0" id="environment-type-error">
+              <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Your home's environment type is required!</span>
+            </p>
+          </div>
+          <div class="unit xs-1-2">
+            <label class="milli" for="livable-space">Livable Space</label>
+            <input id="livable-space" required aria-describedby="livable-space-error" placeholder="e.g. 1500 Square Feet">
+            <p class="error-message milli island-1-4 push-0" id="livable-space-error">
+              <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Your home's livable space is required!</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="grid push-1-2">
+          <div class="unit xs-1-2">
+            <label class="milli" for="gated-yard">Gated Yard</label>
+            <select id="gated-yard" required aria-describedby="gated-yard-error">
+              <option disabled selected value>Please select one</option>
+              <option>Gated</option>
+              <option>Not Gated</option>
+            </select>
+            <p class="error-message milli island-1-4 push-0" id="gated-yard-error">
+              <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Your gate information is required!</span>
+            </p>
+          </div>
+          <div class="unit xs-1-2">
+            <label class="milli" for="yard-lockability">Yard Lockability</label>
+            <select id="yard-lockability" required aria-describedby="yard-lockability-error">
+              <option disabled selected value>Please select one</option>
+              <option>Lockable</option>
+              <option>Not Lockable</option>
+            </select>
+            <p class="error-message milli island-1-4 push-0" id="yard-lockability-error">
+              <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Your yard lockability information is required!</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="section-2-btn form-btn pad-t-1-2">
+        <button class="btn micro" type="submit">NEXT STEP</button>
       </div>
     </div>
-  </form>
+
+    </form>
+    <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
 
   </div>
-
 
   <section class="text-span-section">
     <div class="text-span-section-text pad-t pad-b-1-4">
