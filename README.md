@@ -1,14 +1,15 @@
 ---
 name: Loyal Rescue
 
-fontUrl: "https://fonts.googleapis.com/css?family=Lato|Oswald"
+fontUrl: "https://fonts.googleapis.com/css?family=Nunito"
+
 
 outputFile: "index.html"
 
 brand:
   logos:
-    backgroundColor: "#673ab7"
+    backgroundColor: "#3949ab"
 
 ---
 
-This is the pattern library for the redesigned Loyal Rescue website. Use the following elements to construct additional pages for this website.
+This is the pattern library for my personal portfolio website.

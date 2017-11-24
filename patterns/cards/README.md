@@ -1,4 +1,4 @@
-**adoption-card** is to be used for listing animals for adoption only. Note: there are two links, one in the btn and one surrounding the image contents.
+**image-card** is to be used for listing recent work on the Home Page and all my work on the Work page..
 
 **basic-card** is to be used for information.
 

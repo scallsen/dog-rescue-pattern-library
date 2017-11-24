@@ -1,16 +1,18 @@
 :root {
-  --color-primary: #673ab7;
-  --color-primary-light: #d1c4e9;
-  --color-primary-dark: #512da8;
-  --color-accent: #fb6333;
-  --color-accent-dark: #e25029;
+  --color-primary: #3949ab;
+  --color-primary-light: #f8fdff;
+  --color-primary-dark: #00227b;
+  --color-accent: #26c6da;
+  --color-accent-light: #6ff9ff;
+  --color-accent-dark: #0095a8;
   --color-primary-text: #212121;
   --color-secondary-text: #757575;
   --color-divider: #bdbdbd;
   --color-white: #fff;
-  --color-focus: #03a9f4;
+  --color-focus: #6ff9ff;
 
-  --font-primary: "Roboto", sans-serif;
+  --font-primary: "Nunito", sans-serif;
+  --font-secondary: "Nunito Sans", sans-serif;
 
 }
 

@@ -1,7 +1,7 @@
-.home-dog-banner-container {
+.home-image-banner-container {
   align-items: center;
   background-color: var(--color-primary-light);
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
   text-align: center;
   padding-top: 0;
 }

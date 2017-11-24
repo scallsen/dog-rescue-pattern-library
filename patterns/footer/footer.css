@@ -4,3 +4,8 @@
   color: var(--color-primary);
   text-align: center;
 }
+
+.footer-link {
+  color: var(--color-primary);
+  text-decoration: none;
+}
